@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="10px" viewBox="0 0 20 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>userpanel-expand</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="userpanel-expand" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M1.99079514,0 C0.891309342,0 0.633131173,0.633131173 1.41154632,1.41154632 L8.58845368,8.58845368 C9.36802919,9.36802919 10.6331312,9.36686883 11.4115463,8.58845368 L18.5884537,1.41154632 C19.3680292,0.631970814 19.1017876,0 18.0092049,0 L1.99079514,0 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

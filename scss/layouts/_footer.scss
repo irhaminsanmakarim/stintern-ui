@@ -1,0 +1,102 @@
+.footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	background-color: $bg-dark;
+	// padding: 1rem;
+	z-index: 800;
+
+	@media (min-width: $screen-sm-min) { 
+		position: absolute;
+	}
+}
+
+.footer-body {
+	display: table;
+	width: 100%;
+	padding: 1.5rem 0;
+}
+
+.footer-left, .footer-center, .footer-right {
+	display: block;
+	text-align: center;
+	margin-bottom: 2rem;
+
+	@media (min-width: $screen-sm-min) { 
+		display: table-cell;
+		width: 33.33%;
+	}
+}
+
+.footer-left {
+	
+	@media (min-width: $screen-sm-min) { 
+		text-align: left;
+	}
+}
+
+.footer-logo {
+	display: inline-block;
+	margin: 0;
+	height: 30px;
+
+	svg {
+		width: 100%;
+		height: 100%;
+		opacity: 0.4;
+		fill: #000;
+	}
+
+}
+
+.footer-right {
+	margin-bottom: 0;
+
+	@media (min-width: $screen-sm-min) { 
+		text-align: right;
+	}
+
+	a {
+		color: #fff;
+		opacity: 0.3;
+		vertical-align: middle;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 1px;
+		&:hover {
+			opacity: 0.4;
+		}
+	}
+
+	a + a {
+		margin-left: 1rem;
+	}
+
+	svg {
+		max-width: 30px;
+		max-height: 30px;
+		fill: #ffffff;
+	}
+}
+
+.footer-center {
+	position: relative;
+
+	a {
+		font-size: 0.9em;
+		font-weight: bold;
+		color: rgba(255,255,255,.3);
+		padding: 0 .5em;
+		&:hover {
+			color: rgba(255,255,255,.4);
+		}
+	}
+}
+
+.footer-footer {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	color: rgba(255,255,255,0.3);
+	background: rgba(0,0,0,0.2);
+}

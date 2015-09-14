@@ -1,0 +1,24 @@
+{% include head.html %}
+
+  <body>
+
+    {% include svg-defs.svg %}
+
+    {% if page.login-as == "student" %}
+        {% include header-student.html %}
+    {% elsif page.login-as == "boss"%}
+        {% include header-boss.html %}
+    {% else %}
+        {% include header-public.html %}
+    {% endif %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    <!-- Script -->
+    <script src="{{ site.baseurl }}/js/script.js"></script>
+
+  </body>
+
+</html>

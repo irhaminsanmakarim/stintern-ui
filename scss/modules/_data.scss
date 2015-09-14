@@ -1,0 +1,54 @@
+.statisticText {
+	font-style: italic;
+	color: #888;
+	display: block;
+	margin-bottom: .5em;
+}
+
+.data {
+	text-align: center;
+	line-height: 1.1;
+	// color: $stintern-blue;
+	color: #191919;
+	display: inline-block;
+}
+
+.data .data-number {
+	font-weight: bold;
+	font-size: 3.3rem;
+	margin: 0;
+	line-height: 1;
+	color: $stintern-blue;
+}
+
+.data .data-title {
+	// font-weight: bold;
+	font-size: .85rem;
+	margin: 0;
+	color: #777;
+}
+
+@media (min-width: $screen-sm-min) {
+
+	.data {
+		text-align: center;
+	}
+	.data .data-number {
+		font-size: 3.3rem;
+	}
+
+	.data .data-title {
+		font-size: .9rem;
+	}
+}
+
+///////////////////////////////////
+// Used in stint mobile view
+///////////////////////////////////
+// .stint .data-number, .stint .data-title {
+// 	display: inline;
+// 	font-weight: bold;
+// 	font-size: .85rem;
+// 	margin: 0;
+// 	line-height: 1;
+// }

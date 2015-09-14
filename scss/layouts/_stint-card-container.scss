@@ -1,0 +1,58 @@
+.stint-card-container, .stint-card-responsive-container {
+	text-align: center;
+	margin: 0 -15px;
+
+	& > hgroup {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		margin: 0 auto;
+		max-width: 650px;
+	}
+
+	@media (min-width: $screen-lg-min) {
+		text-align: left;
+		margin: 0 auto;
+		max-width: 730px;
+
+		& > hgroup {
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+.stint-card-responsive-container {
+	@media (min-width: $screen-lg-min) {
+		text-align: right;
+		margin: 0 auto;
+	}
+}
+
+.total-stint {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+
+	@media (min-width: $screen-lg-min) {
+		float: left;
+		margin: 0;
+	}
+}
+
+.sorting {
+
+	@media (min-width: $screen-lg-min) {
+		float: right;
+		text-align: right;
+		margin: 0 auto;
+	}
+
+	@media (min-width: $screen-md-min) {
+		.dropdown-menu {
+			right: 0;
+			left: auto;
+		}
+	}
+}
+

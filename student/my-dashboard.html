@@ -1,0 +1,53 @@
+---
+layout: default
+title:  "Student Dashboard"
+active: dashboard
+login-as: student
+---
+
+<section class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="page-header--info">
+          <h2 class="page-header--title">My Stints</h2>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="page-header--action">
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- page-header -->
+
+<section class="toolbar-nav">
+  <div class="container">
+    <div class="row ">
+      <div class="col-sm-12">
+        <div class="toolbar-nav--tabs">
+          <a href="#" class="active">All</a>
+          <a href="#" class="">Successful</a>
+          <a href="#" class="">Pending Interview</a>
+          <a href="#" class="">Under Review</a>
+          <a href="#" class="">Unsuccessful</a>
+        </div>
+      </div>
+    </div> 
+  </div><!-- toolbar-nav -->
+</section><!-- toolbar -->
+
+
+<main class="content-area">
+  <div class="container">
+    <div class="row">
+    	<div class="col-sm-12">
+    		<section class="stint-card-grid-container">
+				{% for post in site.posts %}
+	    			{% include stint-card-student-dashboard.html %}
+				{% endfor %}
+			</section>
+    	</div>
+    </div>
+  </div>
+</main><!-- contentArea -->   

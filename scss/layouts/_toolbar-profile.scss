@@ -1,0 +1,69 @@
+.toolbar-profile {
+	background-color: #fff;
+	text-align: center;
+
+	@media (min-width: $screen-md-min) {
+		text-align: left;
+	}
+}
+
+.toolbar-profile--tabs {
+	@media (min-width: $screen-md-min) {
+		margin-left: 200px;
+	}
+}
+
+.toolbar-profile--tabs a {
+    display: inline-block;
+    position: relative;
+    font-size: 13px;
+    padding: 0;
+    float: left;
+    line-height: 4rem;
+    margin: 0;
+    border-bottom: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #888;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 50%;
+
+    border-left: $border;
+
+	&:first-child {
+		border-left: none;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $stintern-pink;
+	}
+
+	&.active {
+		color: $stintern-pink;
+		text-decoration: none;
+	}
+}
+
+@media (min-width: $screen-md-min) {  
+	.toolbar-profile--tabs a {
+		display: inline-block;
+	  	margin-left: 2rem;
+		border-bottom: 1px solid transparent;
+		float: none;
+		width: auto;
+		border-left: none;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&.active {
+			border-color: $stintern-pink;
+			color: $stintern-pink;
+			text-decoration: none;
+			background-color: none;
+		}
+	}
+}

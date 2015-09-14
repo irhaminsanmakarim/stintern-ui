@@ -1,0 +1,96 @@
+$navigation-height: 4rem;
+
+.navigation {
+	height: $navigation-height;
+	top: 0;
+	width: 100%;
+	z-index: 801;
+	background: $stintern-blue;
+	box-shadow: none;
+	position: relative;
+	// box-shadow: $materialz2;
+}
+
+#logo {	
+	display: block;
+	line-height: 0;
+	height: $navigation-height;
+	margin: 0 auto;
+	width: 8rem;
+
+	.stintbird {
+		fill: #ffffff;
+		display: block;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	@media (min-width: $screen-sm-min) {  
+		float: left;
+		margin-right: 3rem;
+		display: inline-block;
+		width: 9rem;
+	}
+}
+
+.site-nav {
+	float: left;
+	display: none;
+
+	@media (min-width: $screen-sm-min) {  
+		& {
+			display: block;
+		}
+	}
+}
+.action-nav {
+	float: right;
+	display: none;
+
+	@media (min-width: $screen-sm-min) {  
+		& {
+			display: block;
+		}
+	}
+}
+
+.nav-link {
+	margin-left: 0;
+	line-height: $navigation-height;
+	background: transparent;
+	padding: 1rem;
+	font-weight: bold;
+	color: rgba(255,255,255, .5);
+
+	&:hover, &.active, &:focus {
+		// color: $stintern-pink;
+		// color: darken($stintern-pink, 30%);
+		color: rgba(255,255,255, 1);
+		text-decoration: none;
+	}
+}
+
+.menu-icon {
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 4rem;
+  	padding: 1.22rem;
+
+  	svg {
+	    fill: #fff;
+	    width: 100%;
+	    height: 100%;
+  	}
+
+  	@media (min-width: $screen-sm-min) { 
+		display: none;
+	}
+}
+
+
+
+

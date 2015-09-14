@@ -1,0 +1,11 @@
+.sorting {
+	margin-bottom: 2rem;
+	float: right;
+
+	@media (min-width: $screen-md-min) {
+		.dropdown-menu {
+			right: 0;
+			left: auto;
+		}
+	}
+}

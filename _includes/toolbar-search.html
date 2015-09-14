@@ -1,0 +1,159 @@
+<section class="toolbar-search">
+  <a href="#" class="button-search open-search-modal"><svg class="icon-filter-search"><use xlink:href="#shape-filter-search"/></svg>Filter Stint</a>
+</section><!-- toolbar-search -->
+
+<div class="advance-search-modal">
+	<form action="">
+		<hgroup class="advance-search-modal--header">
+			<p>Filter Search</p>
+			<span class="button-close-modal open-search-modal">
+				<svg><use xlink:href="#shape-close"/></svg>
+			</span>
+		</hgroup>
+    	<section class="advance-search-modal--body">
+			<div class="form-group form-group-stintern">
+				<label for="name" class="">Keywords</label>
+				<input type="text" class="form-control form-control-stintern" id="name" placeholder="Designer, Project Manager, etc..">
+			</div>
+			<div class="form-group form-group-stintern">
+				<label for="name" class="">Skill Required</label>
+				<input type="text" class="form-control form-control-stintern" id="name" placeholder="Node.js, Adobe Illustrator, etc..">
+			</div>
+			<div class="form-group form-group-stintern">
+				<label for="name" class="">Industry</label>
+				<div class="select-wrapper-styled">
+				    <select name="year" id="Industry" class="form-control form-control-stintern" placeholder="Select industry">
+						<option value>Select Industry</option>
+						<option value="1">Design</option>
+						<option value="2">Other</option>
+						<option value="3">Other</option>
+				    </select>
+				    <span><svg><use xlink:href="#shape-expand-more-square"/></svg></span>
+				</div>
+			</div>
+			<div class="form-group form-group-stintern">
+				<label for="name" class="">Experience Required</label>
+				<div class="radio-inline-form">
+					<div class="radio-inline-form-item">
+						<label>
+							<input type="radio" value="" name="Experience" checked>
+							<div class="radio-inline-form-box">
+							  	<p>Critical</p>
+							</div>
+						</label>
+					</div>
+					<div class="radio-inline-form-item">
+						<label>
+							<input type="radio" value="" name="Experience">
+							<div class="radio-inline-form-box">
+							  	<p>Preferred</p>
+							</div>
+						</label>
+					</div>
+					<div class="radio-inline-form-item">
+						<label>
+							<input type="radio" value="" name="Experience">
+							<div class="radio-inline-form-box">
+							  	<p>Not Required</p>
+							</div>
+						</label>
+					</div>
+				</div><!-- radio-inline-form -->
+			</div>
+			<div class="form-group form-group-stintern">
+				<label for="name" class="">Rates Type</label>
+				<div class="radio-inline-form">
+					<div class="radio-inline-form-item">
+						<label>
+							<input type="radio" value="" name="Rates" checked>
+							<div class="radio-inline-form-box">
+							  	<p>All</p>
+							</div>
+						</label>
+					</div>
+					<div class="radio-inline-form-item">
+					  <label>
+					    <input type="radio" value="" name="Rates">
+					    <div class="radio-inline-form-box">
+					      	<p>Unpaid</p>
+					    </div>
+					  </label>
+					</div>
+					<div class="radio-inline-form-item">
+						<label>
+						    <input type="radio" value="" name="Rates">
+						    <div class="radio-inline-form-box">
+						      	<p>Paid</p>
+						    </div>
+						</label>
+					</div>
+				</div><!-- radio-inline-form -->
+			</div>
+			<div class="form-group form-group-stintern">
+			  <label for="name" class="">Work Location</label>
+			  <div class="radio-inline-form">
+			    <div class="radio-inline-form-item">
+			      <label>
+			        <input type="radio" value="" name="Location" >
+			        <div class="radio-inline-form-box">
+			          <p>All</p>
+			        </div>
+			      </label>
+			    </div>
+			    <div class="radio-inline-form-item">
+			      <label>
+			        <input type="radio" value="" name="Location">
+			        <div class="radio-inline-form-box">
+			          <p>Remote</p>
+			        </div>
+			      </label>
+			    </div>
+			    <div class="radio-inline-form-item">
+			      <label>
+			        <input type="radio" value="" name="Location" checked>
+			        <div class="radio-inline-form-box">
+			          <p>Onsite</p>
+			        </div>
+			      </label>
+			    </div>
+			  </div><!-- radio-inline-form -->
+			</div>
+			<div class="form-group form-group-stintern">
+			  <label for="name" class="">Select State</label>
+			  <div class="radio-form">
+			    <div class="radio-form-item">
+			      <label>
+			        <input type="radio" value="" name="EmployeesNumber">
+			        <span class="radio-form-image"><svg><use xlink:href="#shape-check-box"/></svg></span>
+			        <p>Australian Capital Territory</p>
+			      </label>
+			    </div>
+			    <div class="radio-form-item">
+			      <label>
+			        <input type="radio" value="" name="EmployeesNumber">
+			        <span class="radio-form-image"><svg><use xlink:href="#shape-check-box"/></svg></span>
+			        <p>New South Wales</p>
+			      </label>
+			    </div>
+			    <div class="radio-form-item">
+			      <label>
+			        <input type="radio" value="" name="EmployeesNumber">
+			        <span class="radio-form-image"><svg><use xlink:href="#shape-check-box"/></svg></span>
+			        <p>Queensland</p>
+			      </label>
+			    </div>
+			    <div class="radio-form-item">
+			      <label>
+			        <input type="radio" value="" name="EmployeesNumber">
+			        <span class="radio-form-image"><svg><use xlink:href="#shape-check-box"/></svg></span>
+			        <p>Other</p>
+			      </label>
+			    </div>
+			  </div><!-- radio-form -->
+			</div>
+    	</section><!-- -->
+		<footer class="advance-search-modal--footer">
+			<input type="submit" class="button button-wide" value="Apply Filters">
+		</footer>
+	</form>		
+</div>

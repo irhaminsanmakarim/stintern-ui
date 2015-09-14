@@ -1,0 +1,51 @@
+---
+layout: default
+title:  "Other Company Stint List"
+active: stint
+stint-page: 
+login-as: boss
+---
+
+<section class="profile">
+  <header class="profile--header" style="background: url(/images/gradient-profile.png) left bottom repeat-x, url(/images/gradient-profile.png) left bottom repeat-x, url(/images/company/airbnb-office-1.jpg) center top no-repeat #fff">
+    <div class="container">
+      <div class="profile--header-table">              
+        <div class="profile--header-container">
+          <div class="profile--logo-wrapper">
+            <img src="/images/company/pinterest-logo.png" alt="">
+            <h1 class="hide">pinterest</h1>
+          </div>
+          <div class="profile--header-content">
+            <h2 class="profile--name">Pinterest</h2>
+            <p><svg class="icon-stint-card is-white"><use xlink:href="#shape-pin"/></svg>Located at New York, USA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="toolbar-profile">
+    <div class="container">
+      <div class="toolbar-profile--tabs">
+        <a href="/boss/other-company-profile.html" class="">Profile</a>
+        <a href="/boss/other-company-stint-list.html" class="">Stints<span class="badge-stintern">3</span></a>
+      </div> 
+    </div>
+  </nav><!-- toolbar-nav -->
+</section><!-- profile -->
+
+<main class="content-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+
+        <!-- Alert Area -->
+
+        {% for post in site.posts %}
+            {% include stint-card-company.html %}
+        {% endfor %}
+
+
+      </div>
+    </div>
+  </div>
+</main><!-- contentArea -->

@@ -1,0 +1,228 @@
+@mixin button-color($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  &:active:focus {
+    color: $color;
+    background-color: darken($background, 10%);
+    border-color: darken($border, 10%);
+    outline: none;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+@mixin button-sizing($padding-top, $padding-horizontal, $padding-bottom, $font-size, $line-height, $border-radius) {
+  padding: $padding-top $padding-horizontal $padding-bottom;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+.btn {
+  box-shadow: $stint-card-box-shadow;
+}
+
+.button {
+  // bootstrap class
+  @extend .btn;
+  // mixin bootstrap
+  @include button-color(#fff, $stintern-pink, $stintern-pink);
+  @include button-sizing(0.75rem, 1.5rem, 0.8125rem, inherit, normal, 0.3rem);
+
+  font-weight: bold;
+  // margin-right: .5rem;
+  // margin-bottom: .5rem;
+}
+
+.button-grey, .button-cancel {
+  // bootstrap class
+  @extend .btn;
+  // mixin bootstrap
+  @include button-color(#777, #eee, #eee);
+  @include button-sizing(0.75rem, 1.5rem, 0.8125rem, inherit, normal, 0.3rem);
+
+  font-weight: bold;
+  // margin-right: .5rem;
+  // margin-bottom: .5rem;
+}
+
+.button-blue, .button-save {
+  // bootstrap class
+  @extend .btn;
+  // mixin bootstrap
+  @include button-color(#fff, $stintern-blue, $stintern-blue);
+  @include button-sizing(0.75rem, 1.5rem, 0.8125rem, inherit, normal, 0.3rem);
+
+  font-weight: bold;
+  // margin-right: .5rem;
+  // margin-bottom: .5rem;
+}
+
+
+.button-soft {
+  // bootstrap class
+  @extend .btn;
+  // mixin bootstrap
+  @include button-color(#888, #eee, #eee);
+  font-weight: bold;
+  font-size: 13px;
+
+  &:hover {
+    background: #ddd;
+    border-color: #ddd;
+    // color: #777;
+  }
+}
+
+.button-navigation {
+	// bootstrap class
+	@extend .btn;
+	// mixin bootstrap
+	@include button-color(#fff, $stintern-pink, $stintern-pink);
+	@include button-sizing(0.75rem, 1.5rem, 0.8125rem, inherit, normal, 0.3rem);
+
+	vertical-align: baseline;
+	font-weight: bold;
+}
+
+.button-wide {
+	display: block;
+  // width: 200px;
+	width: 100%;
+  margin-left: auto;
+	margin-right: auto;
+}
+
+.button-search {
+  $button-search-height: 56px - ($toolbar-search-padding-top * 2);
+  // bootstrap class
+  @extend .btn;
+  // mixin bootstrap
+  @include button-color(#666, #fff, #e8e8e8);
+  @include button-sizing(0, 0, 0, 13px, $button-search-height - 2, 0.3rem);
+  width: 100%;
+  max-width: 275px;
+  height: $button-search-height;
+
+  &:hover, &:focus, &:active {
+    background-color: #fff;
+  }
+}
+
+.button-outline {
+  // bootstrap class
+  @extend .btn;
+  // mixin bootstrap
+  @include button-color(#888, #fff, #d4d4d4);
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  &:active:focus {
+    background: #fff;
+    border-color: #d4d4d4;
+  }
+
+  &:hover .icon-sorting,
+  &:active .icon-sorting,
+  &:visited .icon-sorting,
+  &:focus .icon-sorting {
+    transform: rotate(90deg);
+    transition: transform 200ms;
+  }
+
+  .icon-sorting {
+    transition: transform 200ms;
+  }
+}
+
+.button-round {
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
+  vertical-align: middle;
+  border-radius: 100em;
+  border: none;
+
+  background-color: #eee;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1.7rem 1.7rem;
+
+  &:hover {
+    background-color: #ddd;
+  }
+
+  &.is-active {
+    
+  }
+
+  &.i-download {
+    background-image: url('../images/download.svg');
+  }
+
+  &.i-accept {
+    background-image: url('../images/accept.svg');
+    // background-color: lighten($green, 20%);
+    background-color: $green;
+    &:hover {
+      background-color: lighten($green, 7%);
+    }
+  }
+
+  &.i-event-available {
+    background-image: url('../images/event-available.svg');
+    // background-color: lighten($green, 20%);
+    background-color: $green;
+    &:hover {
+      background-color: lighten($green, 7%);
+    }
+  }
+
+  &.i-reject {
+    background-image: url('../images/reject.svg');
+    background-color: $red;
+    &:hover {
+      background-color: lighten($red, 7%);
+    }
+  }
+
+  &.i-expand {
+    background-image: url('../images/expand.svg');
+  }
+
+  a + a &, p + a & {
+    margin-left: .7em;
+  }
+}

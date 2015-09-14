@@ -1,0 +1,38 @@
+.select-wrapper-styled {
+	position: relative;
+
+	span {
+		display: block;
+		position: absolute;
+		top: 50%;
+		right: 9px;
+		width: 16px;
+		height: 16px;
+		margin-top: -9px;
+		svg {
+		    width: 100%;
+		    height: 100%;
+		    fill: #d0d0d0;
+		    vertical-align: middle;
+		}
+	}
+
+	&.colored span {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    display: block;
+	    height: 100%;
+	    background-color: #008cba;
+	    width: 3rem;
+	    border: 2px solid transparent;
+	    border-radius: 0 .3em .3em 0;
+	    padding: 10px;
+
+	    svg {
+	    	width: 100%;
+	    	height: 100%;
+	    	fill: #fff;
+	    }
+	}
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="45px" height="26px" viewBox="0 0 45 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>menu-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="menu-icon" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M0,22.4791667 C0,20.5346642 1.58835599,18.9583333 3.54986037,18.9583333 L41.4501396,18.9583333 C43.4106734,18.9583333 45,20.5342366 45,22.4791667 C45,24.4236692 43.411644,26 41.4501396,26 L3.54986037,26 C1.58932662,26 0,24.4240968 0,22.4791667 L0,22.4791667 Z M0,3.52083333 C0,1.57633077 1.58835599,0 3.54986037,0 L41.4501396,0 C43.4106734,0 45,1.57590324 45,3.52083333 C45,5.46533589 43.411644,7.04166667 41.4501396,7.04166667 L3.54986037,7.04166667 C1.58932662,7.04166667 0,5.46576343 0,3.52083333 L0,3.52083333 Z" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

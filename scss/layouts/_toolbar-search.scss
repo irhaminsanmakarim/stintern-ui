@@ -1,0 +1,13 @@
+$toolbar-search-padding-top: 9px;
+
+.toolbar-search {
+	height: $navigation-height;
+	padding: $toolbar-search-padding-top 1.75rem 0;
+	border-top: $border;
+	background-color: #f0f0f0;
+	text-align: center;
+
+	@media (min-width: $screen-lg-min) {
+		display: none;
+	}
+}

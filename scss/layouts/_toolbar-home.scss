@@ -1,0 +1,58 @@
+.toolbar-home {
+	// height: $navigation-height;
+	background-color: #fff;
+	text-align: center;
+}
+
+.toolbar-home-tabs a {
+	display: inline-block;
+	position: relative;
+	line-height: 3rem;
+	font-size: 10px;
+  	margin: 0;
+	border-bottom: none;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #999;
+	font-weight: 100;
+	letter-spacing: 1px;
+
+	&:nth-child(2) {
+		margin: 0 1.35rem;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $stintern-pink;
+	}
+
+	&.active {
+		color: $stintern-pink;
+		text-decoration: none;
+	}
+
+	&.disable {
+		color: #ddd;
+		&:hover {
+			color: #ddd;
+			cursor: text;
+		}
+	}
+}
+
+@media (min-width: $screen-sm-min) {  
+	.toolbar-home-tabs a {
+		display: inline-block;
+	  	margin: 0;
+	  	font-size: 12px;
+		// border-bottom: 2px solid transparent;
+
+		&:nth-child(2) {
+			margin: 0 3rem;
+		}
+
+		&.active {
+			border-color: $stintern-pink;
+		}
+	}
+}

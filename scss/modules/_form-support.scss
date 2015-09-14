@@ -1,0 +1,144 @@
+.support {
+	position: fixed;
+	display: block;
+	text-align: center;
+	padding: 2rem 0;
+	background-color: #fff;
+	border-top: 1px solid #e0e0e0;
+
+	@media (min-width: $screen-sm-min) { 
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+		z-index: 802;
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		// box-shadow: $materialz3;
+	}
+}
+
+.support-container {
+	display: inline;
+	position: relative;
+
+	@media (min-width: $screen-sm-min) {
+		display: inline-block;
+		// padding: 0;
+	}
+}
+
+.support-trigger {
+	position: relative;
+	margin: 0 auto;
+
+	width: 120px;
+	height: 46px;
+	border-radius: 100rem;
+	background-color: $stintern-pink;
+	cursor: pointer;
+
+	transition: width .2s;
+
+	&:hover {
+		background-color: darken($stintern-pink, 10%);
+	}
+
+	span {
+		visibility: visible;
+
+		color: #fff;
+		font-weight: bold;
+		line-height: 46px;
+
+		height: 46px;
+		overflow: hidden;
+		display: block;
+	}
+}
+
+.support-form {
+	visibility: hidden;
+	opacity: 0;
+	margin-bottom: -20px;
+
+	transition: all .2s ease-in-out;
+	
+	background-color: #fff;
+	box-shadow: $materialz3;
+	border-radius: $border-radius;
+	border: $border;
+	padding: 2rem;
+	min-width: 300px;
+	text-align: left;
+	z-index: 2003;
+	
+	position: absolute;
+	bottom: 60px;
+	right: 50%;
+	margin-right: -150px;
+
+
+	&:before {
+		content: '';
+		position: absolute;
+
+		width: 0;
+		height: 0;
+		border-style: solid;
+
+		// right align
+		// bottom: -5px;
+		// right: 0;
+		// border-width: 0 5px 5px 0;
+		// border-color: transparent #aaa transparent transparent;
+
+		// center align
+		margin-right: -10px;
+		bottom: -10px;
+		right: 50%;
+		border-width: 10px 10px 0 10px;
+		border-color: #fff transparent  transparent transparent;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		right: 0;
+		margin: 0;
+
+		&:before {
+			right: 13px;
+			margin: 0;
+		}
+	}
+
+	label {
+		margin-bottom: 1em;
+	}
+
+	input {
+		float: right;
+	}
+}
+
+.open-form .support-trigger {
+	width: 46px;
+	height: 46px;
+	background-size: 2rem 2rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../images/x-mark-icon-white.svg);
+
+	transition: width .2s;
+}
+
+.open-form .support-container span {
+	display: none;
+}
+
+.open-form .support-form {
+	visibility: visible;
+	opacity: 1;
+	margin-bottom: 0;
+
+	transition: all .2s ease-in-out;
+}

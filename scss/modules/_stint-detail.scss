@@ -1,0 +1,118 @@
+.stint-detail {
+	& > .content-category:first-child {
+		border-bottom: none;
+	}
+}
+
+.stint-detail--header {
+	@extend .clearfix;
+	text-align: center;
+	@media (min-width: $screen-sm-min) {
+		text-align: left;
+	}
+	hgroup {
+		@media (min-width: $screen-sm-min) {
+			float: left;
+		}
+
+		p {
+			font-size: .93em;
+			color: #777;
+		}
+	}
+	& > .data {
+	    padding: 1rem;
+	    border-radius: .3em;
+	    border: $border;
+	    box-shadow: $stint-card-box-shadow;
+	    margin-top: 2rem;
+	    @media (min-width: $screen-sm-min) {
+	    	float: right;
+	    	margin-top: 0;
+	    }
+	}
+
+	& p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.stint-detail--display {
+	text-align: center;
+	padding-top: 2rem;
+	border-top: 2px dotted #e8e8e8;
+	border-bottom: 2px dotted #e8e8e8;
+
+
+	.icon-stint-detail {
+		margin-bottom: 1rem;
+	    fill: $stintern-blue;
+		display: inline-block;
+		height: 2.45rem;
+		width: 2.45rem;
+
+	    @media (min-width: $screen-sm-min) {
+		    height: 3.2rem;
+		    width: 3.2rem;
+	    }
+	}
+}
+
+.stint-detail--display-item {
+	// padding: 1rem;
+	// background-color: #f4f4f4;
+	border-radius: .3rem;
+	margin-bottom: 2rem;
+	text-align: center;
+
+	h5 {
+		margin-bottom: 1rem;
+		display: inline-block;
+		margin-left: 7px;
+		vertical-align: middle;
+
+	    @media (min-width: $screen-sm-min) {
+	    	display: block;
+	    	margin-left: 0;
+	    }
+	}
+}
+
+.stint-detail--data {
+	height: 50px;
+	width: 100%;
+	max-width: 20rem;
+	margin: 0 auto;
+	border-radius: .3rem;
+	background-color: #f8f8f8;
+	text-align: center;
+
+	// color: #fff;
+	p {
+		font-weight: 100;
+	}
+
+	span {
+	    font-weight: bold;
+	    font-size: 1.25em !important;
+	    margin: 0;
+	    margin-right: 1rem;	
+	    color: $stintern-blue;
+	    line-height: 50px;
+	}
+}
+
+#svgstoreccabdcd3c77a226e4b331b9474338531jarum {
+	fill: $stintern-pink;
+}
+
+// <animateTransform 
+// attributeType="xml"
+// attributeName="transform"
+// type="rotate"
+// from="0 34.5 52.5"
+// to="360 34.5 52.5"
+// dur="3s"
+// repeatCount="indefinite" 
+// transform-origin="50% 50%" 
+// fill="#e9098a"/>

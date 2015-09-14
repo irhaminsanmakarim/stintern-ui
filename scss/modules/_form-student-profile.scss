@@ -1,0 +1,21 @@
+.form-student-profile {
+	@extend .card-content;
+}
+.form-boss-profile {
+	@extend .card-content;
+}
+.form-create-stint {
+	@extend .card-content;
+}
+
+.form-profile-image {
+	display: block;
+	margin-bottom: 1.5rem;
+	width: 100%;
+	max-width: 17rem;
+	border-radius: $border-radius;
+
+	& + input {
+		margin-bottom: 2rem;
+	}
+}

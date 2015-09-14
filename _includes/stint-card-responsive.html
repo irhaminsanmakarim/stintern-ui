@@ -1,0 +1,38 @@
+<article class="stint-card is-responsive">
+  <hgroup class="stint-card--logo">
+    <a class="stint-card--logo-image" href="#" style="background-color: #fff;">
+      <img src="{{ site.baseurl }}/images/company/{{ post.company-logo }}" alt="">
+    </a>
+  </hgroup>
+  <main class="stint-card--body">
+    <div class="stint-card--body-bucket">
+      <div class="stint-card--content">
+        <p><i>{{ post.company-name }}</i></p>
+        <a href="student-stint-card--detail.html" class="stint-card--title">{{ post.stint-role }}</a>
+        <p><svg class="icon-stint-card"><use xlink:href="#shape-pin"/></svg>{{ post.stint-city }}, {{ post.stint-country }}</p>
+        <p><svg class="icon-stint-card"><use xlink:href="#shape-deadline"/></svg>{{ post.stint-deadline }} Days left to apply</p>
+      </div>
+      <footer class="stint-card--footer">
+        <div class="stint-card--footer-data">
+          <p class="stint-card--card-data-icon"><svg class="icon-stint-card-footer"><use xlink:href="#shape-applicants"/></svg>{{ post.stint-applicants }}</p>
+          <div class="data">
+            <p class="data-number">{{ post.stint-applicants }}</p>
+            <p class="data-title">Applicants</p>
+          </div>
+        </div>
+        {% if page.login-as == "student" %}
+          <div class="stint-card--footer-bookmark">
+            <a href=""><svg class="icon-bookmark is-bookmarked"><use xlink:href="#shape-bookmark" /></svg></a>
+          </div>
+        {% endif %}
+        <div class="stint-card--footer-action">
+          {% if page.login-as == "student" %}
+          <a href="/student/company-stint-detail.html" class="button-soft">Detail <svg class="icon-button-right-small"><use xlink:href="#shape-chevron-right"/></svg></a>
+          {% else %}
+          <a href="/boss/other-company-stint-detail.html" class="button-soft">Detail <svg class="icon-button-right-small"><use xlink:href="#shape-chevron-right"/></svg></a>
+          {% endif %}
+        </div>
+      </footer>
+    </div>
+  </main>
+</article><!-- stint-card -->

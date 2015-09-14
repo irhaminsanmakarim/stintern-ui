@@ -1,0 +1,24 @@
+.badge-stintern {
+	
+	top: -9px;
+	right: 0;
+	display: inline-block;
+	padding: 0 8px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 1.7;
+	margin: 0 0 0 1rem;
+	vertical-align: baseline;
+	white-space: nowrap;
+	text-align: center;
+	background-color: #aaa;
+	border-radius: 0.2em;
+}
+
+.toolbar-nav--tabs a.active .badge-stintern,
+.toolbar-nav--tabs a:hover .badge-stintern,
+.toolbar-profile--tabs a.active .badge-stintern,
+.toolbar-profile--tabs a:hover .badge-stintern  {
+	background-color: $stintern-pink;
+}

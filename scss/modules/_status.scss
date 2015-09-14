@@ -1,0 +1,43 @@
+.status {
+	display: inline-block;
+	position: relative;
+	font-size: .75em;
+	padding: .7em 1.5em .6em;
+	border: $border;
+	border-color: #eee;
+	border-radius: 5em;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 1;
+	color: #888;
+	margin-bottom: 10px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	background: #fff;
+
+	@media (min-width: $screen-sm-min) {
+		margin-bottom: 0;
+		margin-left: 2rem;
+		vertical-align: bottom;
+	}
+}
+
+.status.green:before {
+	content: ' ';
+	display: inline-block;
+	border-radius: 10em;
+	height: 1em;
+	width: 1em;
+	margin-right: .5em;
+	vertical-align: top;
+	background: $green;
+}
+
+.status.red:before {
+	@extend .status.green:before;
+	background: $red;
+}
+
+.status.yellow:before {
+	@extend .status.green:before;
+	background: $yellow;
+}

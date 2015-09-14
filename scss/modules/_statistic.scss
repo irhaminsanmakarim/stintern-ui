@@ -1,0 +1,42 @@
+.main-stat {
+	// display: table;
+	width: 100%;
+	// padding: 1rem;
+	margin-bottom: 1.5rem;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: $materialz1;
+	border-radius: $border-radius;
+}
+
+.main-stat-header {
+	padding: 1rem;
+	border-bottom: 1px solid #eee;
+}
+
+.main-stat-body {
+	padding: 1rem;
+}
+
+.main-stat-footer {
+	padding: 1rem;
+	background-color: #f4f4f4;
+	border-radius: 0 0 $border-radius $border-radius;
+}
+
+
+.main-stat-title {
+	color: #888;
+	margin: 0;
+}
+
+.main-stat-number {
+	font-weight: bold;
+	// color: #191919;
+	margin: 0;
+}
+
+.main-stat-info {
+	color: #888;
+	margin: 0;
+}

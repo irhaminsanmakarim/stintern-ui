@@ -1,0 +1,125 @@
+.icon-bookmark {
+	fill: #888;
+	color: transparent;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+}
+.icon-bookmark:hover, .icon-bookmark.is-bookmarked {
+	fill: #008cba ;
+	color: #008cba;
+	transition: all 200ms;
+}
+#svgstoref5cf0a9f67fe67fac4bbffd075dfff2aisi {
+	fill: currentColor;
+}
+
+.icon-button-right {
+    width: 10px;
+    height: 10px;
+    margin-left: 7px;
+    margin-bottom: 3px;
+}
+.icon-button-right-small {
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
+.icon-button-left {
+    width: 10px;
+    height: 10px;
+    margin-right: 7px;
+    margin-bottom: 3px;
+}
+.icon-sorting {
+    width: 1em;
+    height: 1em;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+.icon-filter-search {
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+    margin-bottom: 3px;
+    fill: #333;
+}
+.icon-stint-search {
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+    margin-bottom: 3px;
+}
+
+#svgstore668911e7b488d1f488910fd8670e9190Shape {
+	fill: currentColor;
+}
+
+.icon-stint-card, .icon-profile {
+	width: 16px;
+	height: 16px;
+	fill: $stintern-blue;
+	margin-right: 9px;
+}
+.icon-profile {
+    fill: #888;
+}
+
+.icon-stint-detail {
+    fill: $stintern-blue;
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.icon-stint-card-footer {
+	width: 18px;
+	height: 18px;
+	fill: currentColor;
+	margin-right: 7px;
+}
+
+.icon-star {
+    width: 24px;
+    height: 24px;
+    margin-right: 7px;
+    fill: #888;
+    color: transparent;
+    // cursor: pointer;
+}
+// .icon-star:hover {
+//     fill: lighten($yellow, 20%);
+//     color: lighten($yellow, 20%);
+//     transition: all 200ms;
+// }
+.icon-star.is-filled {
+    fill: $yellow ;
+    color: $yellow;
+    transition: all 200ms;
+}
+#svgstorea85e2a1b3bd3c22e70b451ac14f730f3isi {
+    fill: currentColor;
+}
+
+
+.icon-linkedin {
+	fill: $linkedin;
+}
+.icon-facebook {
+	fill: $facebook;
+}
+.icon-twitter {
+	fill: $twitter;
+}
+.icon-instagram {
+	fill: $linkedin;
+}
+
+svg.is-white {
+	fill: #fff !important;
+}
+
+.icon-gear {
+    height: 8rem;
+    width: 100%;
+}

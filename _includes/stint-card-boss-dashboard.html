@@ -1,0 +1,23 @@
+<article class="stint-card">
+  <hgroup class="stint-card-status">
+    <span class="stint-card-status-label green">Published</span>
+  </hgroup>
+  <main class="stint-card--body">
+    <div class="stint-card--body-bucket">
+      <div class="stint-card--content">
+        <a href="student-stint-card--detail.html" class="stint-card--title">{{ post.stint-role }}</a>
+        <p><svg class="icon-stint-card"><use xlink:href="#shape-pin"/></svg>{{ post.stint-city }}, {{ post.stint-country }}</p>
+        <p><svg class="icon-stint-card"><use xlink:href="#shape-deadline"/></svg>{{ post.stint-deadline }} Days left to apply</p>
+        {% include stint-date.html %}
+      </div>
+      <footer class="stint-card--footer">
+        <div class="stint-card--footer-data">
+          <p class="stint-card--card-data-icon"><svg class="icon-stint-card-footer"><use xlink:href="#shape-applicants"/></svg>{{ post.stint-applicants }}</p>
+        </div>
+        <div class="stint-card--footer-action">
+          <a href="/boss/my-dashboard-stint.html" class="button-soft">Detail<svg class="icon-button-right-small"><use xlink:href="#shape-chevron-right"/></svg></a>
+        </div>
+      </footer>
+    </div>
+  </main>
+</article><!-- stint-card -->

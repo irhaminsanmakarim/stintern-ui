@@ -1,0 +1,35 @@
+.checkbox-form {
+	label {
+		cursor: pointer;
+	}
+
+	input {
+		display: none;
+	}
+
+	.checkbox-form-image {
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		margin-right: 10px;
+		vertical-align: middle;
+		color: transparent;
+
+		svg {
+			height: 100%;
+			width: 100%;
+			fill: #888;
+		}
+	}
+
+	input:checked + .checkbox-form-image {
+		color: $stintern-blue;
+		transition: all 200ms;
+	}
+
+	p {
+		display: inline-block;
+		margin: 0;
+		color: #777;
+	}
+}

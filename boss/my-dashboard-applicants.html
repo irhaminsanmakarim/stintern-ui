@@ -1,0 +1,179 @@
+---
+layout: default
+title:  "Boss's Applicants"
+active: dashboard
+login-as: boss
+---
+
+<section class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="page-header--info">
+          <h2 class="page-header--title">Web Developer</h2>
+          <p class="status green">Published</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="page-header--action">
+          <a href="/boss/edit-stint.html"><button class="button">Edit Stint</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- page-header -->
+
+<section class="toolbar-nav">
+  <div class="container">
+    <div class="row ">
+      <div class="col-sm-12">
+        <div class="toolbar-nav--tabs">
+          <a href="/boss/my-dashboard-stint.html" class="">Overview</a>
+          <a href="/boss/my-dashboard-applicants.html" class="active">Applicants<span class="badge-stintern">3</span></a>
+        </div>
+      </div>
+    </div> <!-- toolbar-nav--tabs -->
+  </div>
+</section><!-- toolbar-nav -->
+
+<main class="content-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+
+        <div class="toolbar-secondary">
+          <div class="text-left">
+            <i>Show 3 Applicants</i>
+          </div>
+        </div>
+
+        <section class="manage-applicant">
+          
+          <article class="manage-applicant-item">
+            <hgroup class="manage-applicant-item__list">
+              <div class="manage-applicant-item__profile">
+                <div class="manage-applicant-item__photo">
+                  <img src="/images/user/cecilia.jpg" alt="">
+                </div>
+                <div class="manage-applicant-item__info">
+                  <a href="#"><h5 class="manage-applicant-item__name">Cecilia</h5></a>
+                  <small><p class="icon-text i-location">Sydney, Australia</p></small>
+                </div>
+                <div class="manage-applicant-item__education">
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <p>consectetur adipisicing elit.</p>
+                  <p> Nihil est fuga ut, unde odio.</p>
+                </div>
+              </div>
+              <nav class="manage-applicant-item__action">
+                <a href="#"><button class="button-round i-event-available" title="Accept this applicant" data-toggle="modal" data-target=".interview-schedule1"></button></a>
+                <a href="#"><button class="button-round i-reject" title="Reject this applicant"></button></a>
+                <a href="#"><button class="button-round i-download" title="Download applicant cv"  data-toggle="modal" data-target=".payCheckout"></button></a>
+                <a data-toggle="collapse" href="#applicant1" aria-expanded="false" aria-controls="collapseExample"><button class="button-round i-expand" title="See applicant message"></button></a>
+              </nav>
+            </hgroup>
+            <div class="collapse" id="applicant1">                  
+              <main class="manage-applicant-item__content">
+                <div class="manage-applicant-item__message">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ratione minus quo rem fuga necessitatibus adipisci dolor veniam assumenda? Laborum inventore doloribus, temporibus error pariatur est ut, sunt a aliquam.</p>
+                </div>
+                <footer class="manage-applicant-item__document">
+                  <div class="manage-applicant-item__document-container">
+                    <img src="/images/stintern-doc.svg" alt="">
+                    <p>SalvadorDaliCV.pdf</p>
+                  </div>
+                  <div class="manage-applicant-item__document-container">
+                    <img src="/images/stintern-doc.svg" alt="">
+                    <p>SalvadorDaliCV.pdf</p>
+                  </div>
+                </footer>
+              </main>
+            </div>
+          </article><!-- manage-applicant-item -->
+
+          <article class="manage-applicant-item">
+            <hgroup class="manage-applicant-item__list">
+              <div class="manage-applicant-item__profile">
+                <div class="manage-applicant-item__photo">
+                  <img src="/images/user/cecilia.jpg" alt="">
+                </div>
+                <div class="manage-applicant-item__info">
+                  <a href="#"><h5 class="manage-applicant-item__name">Cecilia</h5></a>
+                  <small><p class="icon-text i-location">Sydney, Australia</p></small>
+                </div>
+                <div class="manage-applicant-item__education">
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <p>consectetur adipisicing elit.</p>
+                  <p> Nihil est fuga ut, unde odio.</p>
+                </div>
+              </div>
+              <nav class="manage-applicant-item__action">
+                <p class="status red">Rejected</p>
+                <a data-toggle="collapse" href="#applicant2" aria-expanded="false" aria-controls="collapseExample"><button class="button-round i-expand" title="See applicant message"></button></a>
+              </nav>
+            </hgroup>
+            <div class="collapse" id="applicant2">
+              <main class="manage-applicant-item__content">
+                <div class="manage-applicant-item__message">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ratione minus quo rem fuga necessitatibus adipisci dolor veniam assumenda? Laborum inventore doloribus, temporibus error pariatur est ut, sunt a aliquam.</p>
+                </div>
+                <footer class="manage-applicant-item__document">
+                  <div class="manage-applicant-item__document-container">
+                    <img src="/images/stintern-doc.svg" alt="">
+                    <p>SalvadorDaliCV.pdf</p>
+                  </div>
+                  <div class="manage-applicant-item__document-container">
+                    <img src="/images/stintern-doc.svg" alt="">
+                    <p>SalvadorDaliCV.pdf</p>
+                  </div>
+                </footer>
+              </main>
+            </div>
+          </article><!-- manage-applicant-item -->
+
+          <article class="manage-applicant-item">
+            <hgroup class="manage-applicant-item__list">
+              <div class="manage-applicant-item__profile">
+                <div class="manage-applicant-item__photo">
+                  <img src="/images/user/cecilia.jpg" alt="">
+                </div>
+                <div class="manage-applicant-item__info">
+                  <a href="#"><h5 class="manage-applicant-item__name">Cecilia</h5></a>
+                  <small><p class="icon-text i-location">Sydney, Australia</p></small>
+                </div>
+                <div class="manage-applicant-item__education">
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <p>consectetur adipisicing elit.</p>
+                  <p> Nihil est fuga ut, unde odio.</p>
+                </div>
+              </div>
+              <nav class="manage-applicant-item__action">
+                <p class="status red">Rejected</p>
+                <a data-toggle="collapse" href="#applicant3" aria-expanded="false" aria-controls="collapseExample"><button class="button-round i-expand" title="See applicant message"></button></a>
+              </nav>
+            </hgroup>
+            <div class="collapse" id="applicant3">
+              <main class="manage-applicant-item__content">
+                <div class="manage-applicant-item__message">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ratione minus quo rem fuga necessitatibus adipisci dolor veniam assumenda? Laborum inventore doloribus, temporibus error pariatur est ut, sunt a aliquam.</p>
+                </div>
+                <footer class="manage-applicant-item__document">
+                  <div class="manage-applicant-item__document-container">
+                    <img src="/images/stintern-doc.svg" alt="">
+                    <p>SalvadorDaliCV.pdf</p>
+                  </div>
+                  <div class="manage-applicant-item__document-container">
+                    <img src="/images/stintern-doc.svg" alt="">
+                    <p>SalvadorDaliCV.pdf</p>
+                  </div>
+                </footer>
+              </main>
+            </div>
+          </article><!-- manage-applicant-item -->
+
+        </section>
+
+      </div><!-- col -->
+    </div><!-- row -->
+  </div><!-- container -->
+    </main><!-- content-area -->

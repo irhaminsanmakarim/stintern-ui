@@ -1,0 +1,48 @@
+
+.content-category {
+	padding: 0;
+	margin-bottom: 2rem;
+	border-bottom: 2px dotted #e4e4e4;
+
+	&:last-child {
+		border: none;
+	}
+
+	p, li {
+		// margin-bottom: 2rem;
+		line-height: 1.8;
+	}
+
+
+	& ul, ol {
+		padding-left: 1.5rem;
+	}
+}
+.content-category--title {
+	// @extend h2;
+	font-weight: 200;
+	margin-bottom: .8em;
+	color: $stintern-blue;
+	line-height: 1.8;
+	@media (max-width: $screen-xs-max) {
+		font-size: 1.6em;
+	}
+}
+.content-category--group, .content-category--group--education {
+	margin-bottom: 2rem;
+}
+.content-category--group--education p {
+	margin-bottom: 0;
+}
+.status-category-title {
+	@extend .content-category--title;
+	font-size: 1.3em !important;
+	font-weight: normal !important;
+
+	img {
+		max-width: 1.5em;
+		margin-left: 0.5em;
+	}
+}
+
+

@@ -1,0 +1,46 @@
+.radio-company-type {
+
+	&-item {
+		display: inline-block;
+		margin: 0 1em 1em 0;
+	}
+
+	label {
+		cursor: pointer;
+		margin: 0;
+	}
+
+	input[type="radio"] {
+		display: none;
+	}
+
+	input[type="radio"] + .radio-company-type-box {
+		width: 150px;
+		height: auto;
+		text-align: center;
+		padding: 1.5rem;
+		border-radius: $border-radius;
+		
+		background: #fff;
+		border: 2px solid #ddd;
+
+	}
+
+	input[type="radio"]:checked + .radio-company-type-box {
+		border: 2px solid $stintern-blue;
+		background: lighten($stintern-blue, 62%);
+	}
+
+	input[type="radio"]:checked + .radio-company-type-box p {
+		color: $stintern-blue;
+	}
+
+	img {
+		margin-bottom: 1rem;
+	}
+
+	p {
+		color: #777;
+		margin: 0;
+	}
+}

@@ -1,0 +1,41 @@
+---
+layout: default
+title:  "Search Stints"
+active: stint
+login-as: boss
+---
+
+{% include toolbar-search.html %}
+
+<main class="content-area">
+  <div class="container">
+    <div class="row">
+		<div class="col-sm-12 col-md-4">
+			{% include form-advance-search.html %}
+		</div>
+
+    	<div class="col-sm-12 col-md-8">
+            <section class="stint-card-responsive-container">
+            	<hgroup class="clearfix">
+            		<p class="total-stint">273 Stints</p>          		
+		            <div class="sorting">
+		              <div class="dropdown">
+		                <button class="button-outline dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+		                	<svg class="icon-sorting"><use xlink:href="#shape-sorting"/></svg>
+		                	Closing Date
+		                </button>
+		                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+		                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Closing Date</a></li>
+		                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Stint Start Date</a></li>
+		                </ul>
+		              </div>
+		            </div>
+            	</hgroup>
+      
+				{% for post in site.posts %}
+	    			{% include stint-card-responsive.html %}
+				{% endfor %}
+			</section>
+    	</div>
+    </div>
+</main>

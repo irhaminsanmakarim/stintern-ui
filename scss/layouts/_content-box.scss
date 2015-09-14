@@ -1,0 +1,32 @@
+// MUST BE USER AFTER BOOTSTRAP COL
+.card-content-box, .card-content {
+	padding: 3rem 1.5rem;
+	background: #fff;
+	border-radius: 0;
+	// box-shadow: $materialz1;
+	margin-bottom: 2.5rem;
+	// margin-left: -15px; // To neutralize bootstrap padding Column
+	// margin-right: -15px; // To neutralize bootstrap padding Column
+
+	border: $border;
+
+	@media (min-width: $screen-sm-min) { 
+		padding: 3rem;
+		border-radius: 0.35em;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+.transparent-content-box {
+	padding: 3rem 1.5rem;
+	margin-bottom: 2.5rem;
+	margin-left: -15px; // To neutralize bootstrap padding Column
+	margin-right: -15px; // To neutralize bootstrap padding Column
+
+	@media (min-width: $screen-sm-min) { 
+		padding: 0 3rem;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

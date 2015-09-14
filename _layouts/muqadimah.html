@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prototype Stintern</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/app.css">
+
+    <style>
+      html, body {
+        background-color: #008cba;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        display: table;
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+      }
+      main {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      article {
+        padding: 3rem;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+        background: #fff;
+        border-radius: .4rem;
+      }
+      h3 {
+        margin-bottom: 2rem;
+        color: #555;
+      }
+      p {
+        margin-bottom: 2em;
+        color: #777;
+        line-height: 1.6;
+      }
+      svg {
+        width: 100%;
+        height: 100%;      }
+      .link-button {
+        display: inline-block;
+        margin: 0 1em 1em 0;
+      }
+      .link-button-item {
+        width: 150px;
+        height: auto;
+        text-align: center;
+        padding: 1.5rem;
+        border-radius: 0.4rem;
+        background: #fff;
+        border: 2px solid #008cba;
+      }
+      .link-button-item:hover {
+        border: 2px solid #008cba;
+        background: #f7fdff;
+      }
+      .link-button-item svg {
+        margin-bottom: 1rem;
+      }
+      .link-button-item p {
+        margin: 0;
+        font-weight: bold;
+      }
+      .link-button-item:hover p {
+        color: #008cba;
+      }
+      .testing {
+        fill: #999;
+        color: transparent;
+      }
+      .testing:hover {
+        fill: #008cba ;
+        color: #008cba;
+        transition: all 200ms;
+      }
+      #svgstore86e1a235d7160e7cb5975a77ca01d830isi {
+        fill: currentColor;
+      }
+    </style>
+
+</head>
+
+<body>
+
+    {% include svg-defs.svg %}
+
+    {{ content }}
+
+</body>
+
+</html>

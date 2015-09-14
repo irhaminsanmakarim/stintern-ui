@@ -1,0 +1,59 @@
+.toolbar-nav {
+	background-color: #fff;
+	text-align: center;
+
+	@media (min-width: $screen-sm-min) {
+		text-align: left;
+	}
+}
+
+.toolbar-nav--tabs a {
+	display: block;
+	position: relative;
+	font-size: 12px;
+	padding: 0;
+	line-height: 3rem;
+  	margin: 0;
+	border-bottom: none;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #888;
+	font-weight: 100;
+	letter-spacing: 1px;
+
+	border-top: $border;
+
+	&:first-child {
+		border-top: none;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $stintern-pink;
+	}
+
+	&.active {
+		color: $stintern-pink;
+		text-decoration: none;
+	}
+}
+
+@media (min-width: $screen-sm-min) {  
+	.toolbar-nav--tabs a {
+		display: inline-block;
+		padding: 0;
+	  	margin-left: 2rem;
+		border-bottom: 1px solid transparent;
+		border-top: none;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&.active {
+			border-color: $stintern-pink;
+			color: $stintern-pink;
+			text-decoration: none;
+		}
+	}
+}

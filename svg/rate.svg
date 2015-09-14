@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="32px" viewBox="0 0 40 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>rate</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="rate" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M18,26 L22,26 L22,24 L24,24 C25.1,24 26,23.1 26,22 L26,16 C26,14.9 25.1,14 24,14 L18,14 L18,12 L26,12 L26,8 L22,8 L22,6 L18,6 L18,8 L16,8 C14.9,8 14,8.9 14,10 L14,16 C14,17.1 14.9,18 16,18 L22,18 L22,20 L14,20 L14,24 L18,24 L18,26 L18,26 Z M36,0 L4,0 C1.79,0 0.02,1.79 0.02,4 L0,28 C0,30.21 1.79,32 4,32 L36,32 C38.21,32 40,30.21 40,28 L40,4 C40,1.79 38.21,0 36,0 L36,0 Z M36,28 L4,28 L4,4 L36,4 L36,28 L36,28 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

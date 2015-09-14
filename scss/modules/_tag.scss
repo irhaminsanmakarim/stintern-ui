@@ -1,0 +1,14 @@
+.tag {
+	display: inline-block;
+	position: relative;
+	font-size: .9em;
+	line-height: initial;
+	padding: .3em .6em;
+	// border: $border;
+	border-radius: .2em;
+	background: $stintern-blue;
+	color: #fff;
+	margin: 0;
+	margin-bottom: .2em;
+	box-shadow: $stint-card-box-shadow;
+}

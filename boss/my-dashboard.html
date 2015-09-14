@@ -1,0 +1,53 @@
+---
+layout: default
+title:  "Boss Dashboard"
+active: dashboard
+login-as: boss
+---
+
+<section class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="page-header--info">
+          <h2 class="page-header--title">My Stints</h2>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="page-header--action">
+          <a href="/boss/create-stint.html"><button class="button"><svg class="icon-button-left"><use xlink:href="#shape-add"/></svg>Create New Stint</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- page-header -->
+
+<section class="toolbar-nav">
+  <div class="container">
+    <div class="row ">
+      <div class="col-sm-12">
+        <div class="toolbar-nav--tabs">
+          <a href="#" class="active">All</a>
+          <a href="#" class="">Published</a>
+          <a href="#" class="">Draft</a>
+          <a href="#" class="">Closed</a>
+        </div>
+      </div>
+    </div> <!-- toolbar-nav--tabs -->
+  </div>
+</section><!-- toolbar -->
+
+
+<main class="content-area">
+  <div class="container">
+    <div class="row">
+    	<div class="col-sm-12">
+    		<section class="stint-card-grid-container">
+				{% for post in site.posts %}
+	    			{% include stint-card-boss-dashboard.html %}
+				{% endfor %}
+			</section>
+    	</div>
+    </div>
+  </div>
+</main><!-- contentArea -->   

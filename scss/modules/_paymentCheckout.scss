@@ -1,0 +1,125 @@
+.paymentCheckout {
+	// padding: 2em;
+	border-radius: 1em;
+	background: #fff;
+	max-width: 45em;
+	margin: 2em auto 0;
+	box-shadow: $materialz1;
+}
+
+.paymentCheckout-price {
+	position: relative;
+	border-radius: 1em 1em 0 0;
+	padding: 3em;
+	text-align: center;
+	background: $stintern-blue;
+	color: #fff;
+}
+
+
+.paymentCheckout-body {
+	position: relative;
+	border-radius: 0 0 1em 1em;
+	padding: 2em 2em 4em;
+	background: #fff;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 48%;
+		top: -10px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 10px 10px 10px;
+		border-color: transparent transparent #fff transparent;
+	}
+}
+
+@media (min-width: $screen-sm-min) { 
+	.paymentCheckout-price {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: left;
+		padding: 0 3em;
+		margin: 0;
+		zoom: 1;
+		border-radius: 1em 0 0 1em;
+		transition: all 0.2s ease-in-out;
+	}
+	.paymentCheckout-body {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: left;
+		padding: 4em 2em;
+		margin: 0;
+		zoom: 1;
+		border-radius: 0 1em 1em 0;
+		transition: all 0.2s ease-in-out;
+		&:before {
+			content: '';
+			position: absolute;
+			left: -10px;
+			top: 47%;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 10px 10px 10px 0;
+			border-color: transparent #fff transparent transparent;
+		}
+	}
+}
+
+
+.paymentCheckout-amount {
+	font-weight: 200;
+	color: #fff;
+	display: inline;
+}
+.paymentCheckout-title {
+	font-weight: 200;
+	margin-top: 0;
+}
+
+
+.radio-inline-cc, .radio-inline-paypal {
+	@extend .radio-inline;
+	display: inline-block;
+	margin-bottom: 0;
+	vertical-align: middle;
+	font-weight: normal;
+	cursor: pointer;
+	padding: 1em 2em 1em 3em;
+	padding: 1em 1.3em 1em 2.5em;	
+	border: 1px solid #ddd;
+	background: #f4f4f4;
+	width: auto;
+	margin: 0;
+	text-align: center;
+}
+
+@media (min-width: $screen-sm-min) { 
+	.radio-inline-cc, .radio-inline-paypal {
+		padding: 1em 2em 1em 3em;
+		width: 11em;
+	}
+}
+.radio-inline-cc {
+	border-radius: .5em 0 0 .5em;
+
+	input:checked {
+		background: $stintern-blue;
+	}
+}
+.radio-inline-paypal {
+	border-radius: 0 .5em .5em 0;
+}
+.radio-inline + .radio-inline {
+	margin-left: -5px;
+}
+
+.paymentCheckout .btn {
+	// display: block;
+	// margin-top: 2em;
+	margin-right: 1em;
+	border: none;
+}

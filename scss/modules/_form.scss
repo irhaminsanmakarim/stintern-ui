@@ -1,0 +1,218 @@
+// label.select-arrow {
+// 	position: absolute;
+// 	top: 0;
+// 	right: 0;
+// 	display: block;
+// 	height: 100%;
+// 	width: 2rem;
+// 	background-color: $stintern-blue;
+// }
+
+
+
+
+.formIrham-footer {
+	text-align: right;
+	padding: 2em;
+	border-top: $border;
+	border-radius: 0 0 .4em .4em;
+	// background: #fafafa;
+
+	.btn {
+		margin-left: 1em;
+	}
+}
+@media (min-width: $screen-sm-min) { 
+	.formIrham-footer {
+		text-align: left;
+		.btn {
+			display: block;
+			margin: 0 0 1em;
+		}
+	}
+}
+
+.form-footer {
+	@extend .clearfix;
+	padding-top: 3em;
+	// border-top: $border;
+	border-radius: 0 0 .4em .4em;
+	// background: #fafafa;
+}
+
+.form-footer-button-container {
+	float: none;
+}
+
+@media (min-width: $screen-sm-min) { 
+	.form-footer-button-container {
+		// float: right;
+		text-align: center;
+	}
+}
+
+/* ==========================================================================
+   Form custom Container
+   ========================================================================== */
+
+// .formIrham-grouping {
+// 	background: #f0f0f0;
+// 	padding: 2em;
+// 	margin: 1em -2em 1em;
+// }
+
+
+
+/* ==========================================================================
+   CUSTOM FROM BOOTSTRAP
+   ========================================================================== */
+
+.form-group-stintern {
+	@extend .clearfix;
+	text-align: left;
+	label {
+		// color: #888;
+		margin-bottom: 1em;
+		// font-size: .95em;
+	}
+
+}
+
+///////////////////////////////////////////////////////////////
+
+
+.form-control-stintern {
+	height: 42.5px;
+	padding: .7em 1em !important;
+	margin-bottom: 1em ;
+	border-radius: $border-radius;
+	box-shadow: none;
+	// border: $border;
+
+	//Experiment
+	border: 2px solid #e4e4e4 !important;
+	background-color: #fff !important;
+	transition: all .2s;
+}
+
+.form-control-stintern:focus, .form-control-stintern:hover {
+	border: 2px solid $stintern-blue !important;
+	box-shadow: none !important;
+	transition: all .5s;
+}
+
+.form-group-stintern .dropdown-menu {
+	padding: 1rem !important;
+	box-shadow: $materialz1 !important;
+}
+
+//Experiment
+.input-group-addon, button.form-control-stintern {
+	border-color: #e4e4e4 !important;
+	background-color: #e4e4e4 !important;
+}
+
+
+///////////////////////////////////////////////////////////////
+
+.form-advance-search {
+	& label {
+		font-size: 13px;
+		margin-bottom: 7px;
+	}
+
+	& .form-group-stintern, & .form-control-stintern {
+		margin-bottom: 7px;
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+
+
+
+
+.input-group-addon + .form-control-stintern {
+	margin-bottom: 0 !important;
+}
+select[multiple] {
+	min-height: 180px  !important;
+	padding: 1rem  !important;
+	box-shadow: none  !important;
+	overflow: visible;
+
+	option {
+		padding: .4em 1em  !important;
+	}
+}
+
+.glyphicon {
+	color: #777 !important;
+}
+
+.big-search-stintern {
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+
+	.form-control-stintern {
+		border: none !important;
+		background-color: #eee !important;
+	}
+	
+	.button {
+		padding: 0 .7rem;
+		margin: 0 !important;
+		height: 100%;
+		border: none;
+		background-color: $stintern-pink;
+
+		&:hover {
+			background-color: darken($stintern-pink,5%);
+		}
+
+		img {
+			width: 25px;
+		}
+	}
+
+	input {
+		margin: 0 !important;
+		border-radius: $border-radius 0 0 $border-radius !important;
+	}
+}
+
+input + input {
+	margin-left: 1em;
+}
+
+
+
+///////////////////////////////////////////////////////////////
+
+// select {
+// 	position: relative;
+// }
+
+// select + span {
+// 	position: absolute;
+// 	right: 0;
+// 	top: 0;
+// 	display: block;
+// 	width: 3em;
+// 	height: 100%;
+// 	height: 3em;
+// 	background-color: $stintern-blue;
+// }
+
+.responsibility-form {
+  width: 25rem !important;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.responsibility-button {
+	width: auto !important;
+	display: inline-block !important;
+}

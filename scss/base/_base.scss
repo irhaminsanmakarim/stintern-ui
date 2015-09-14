@@ -1,0 +1,74 @@
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800,300);
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800,300);
+
+html {
+	height: 100%;
+	font-family: "Open Sans";
+	font-size: 87.5%;
+	color: #484848;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	width: 100%;
+	color: #484848;
+	// background: rgb(249, 249, 251);
+	// background: #f4f4f4;
+	background: #F5F6F7;
+	background: #f1f2f3;
+	background: #f8f8f8;
+	// background: #eee;
+
+	@media (min-width: $screen-sm-min) { 
+		padding-bottom: 140px;
+	}
+}
+
+svg {
+	vertical-align: middle;
+	fill: currentColor;
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+	&:hover, &:focus {
+		text-decoration: none;
+		color: $stintern-pink;
+	}
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 700;
+	margin-top: 0;
+	font-family: "Open Sans";
+}
+
+p {
+	word-wrap: break-word;
+}
+
+button:active,
+button:focus,
+button:visited,
+a:active,
+a:focus,
+a:visited, {
+	outline: 0;
+}
+
+select {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+}
+
+hr {
+	margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-top: $border;
+}

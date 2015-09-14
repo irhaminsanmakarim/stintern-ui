@@ -1,0 +1,27 @@
+---
+layout: default
+title:  "Student Suggestion"
+active: stint
+stint-page: suggestion
+login-as: student
+---
+
+{% include toolbar-stint.html %}
+
+<main class="content-area">
+  <div class="container">
+    <div class="row">
+    	<div class="col-sm-12 col-md-8 col-md-offset-2">
+            <section class="stint-card-responsive-container">
+            	<hgroup class="clearfix">
+            		<p class="total-stint">273 Stints</p>
+            	</hgroup>
+      
+				{% for post in site.posts %}
+	    			{% include stint-card-responsive.html %}
+				{% endfor %}
+			</section>
+    	</div>
+    </div>
+  </div>
+</main>

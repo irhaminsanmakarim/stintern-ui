@@ -1,0 +1,63 @@
+.group, .clearfix {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+    &:before, &:after {
+		content: "";
+	    display: table;
+    }
+    &:after {
+    	clear: both;
+    }
+}
+
+.margin-top-2em {
+	margin-top: 2em;
+}
+.margin-bottom-2em {
+    margin-bottom: 2em;
+}
+.margin-bottom-1em {
+    margin-bottom: 1em;
+}
+.margin-right-1em {
+    margin-right: 1em;
+}
+.padding-top-2em {
+    padding-top: 2em;
+}
+
+.breather {
+  margin-bottom: 2em;
+}
+
+.greyText {
+    // color: #777;
+    color: $stintern-blue;
+    font-weight: bold;
+}
+
+.grey-text {
+    color: #777;
+    // text-transform: uppercase;
+    // letter-spacing: .5px;
+}
+
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.relative {
+    position: relative;
+}
+
+.round {
+    border-radius: 1000rem !important;
+}
+
+.display-table {
+    display: table;
+}

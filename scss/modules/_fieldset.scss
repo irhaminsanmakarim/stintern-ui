@@ -1,0 +1,13 @@
+.fieldset-grouping {
+	border: none;
+	// background: #f4f4f4;
+	background: #e4e4e4;
+	margin: 0 -15px 2rem -15px;
+	padding: 2rem 0.5rem;
+	border-radius: $border-radius;
+
+	@media (min-width: $screen-sm-min) {
+		margin: 0 0 2rem 0;
+		padding: 2rem 1rem;
+	}
+}

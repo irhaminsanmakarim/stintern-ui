@@ -1,0 +1,33 @@
+.apply-stint-form {
+	@extend .card-content;
+
+	margin: 0;
+
+	hgroup {
+		text-align: center;
+	}
+}
+
+.apply-stint-form-title {
+	// @extend .profile-category-title;
+	color: $stintern-pink;
+}
+
+.apply-stint-form-container {
+	max-width: 50em;
+	padding: 0 0;
+	margin: 0 auto;
+	
+	@media (min-width: $screen-sm-min) {
+		padding: 0 1.5em;
+	}
+}
+
+.apply-stint-form-footer {
+	padding: 2em 0;
+	border-top: $border;
+}
+
+.apply-stint-alert {
+
+}

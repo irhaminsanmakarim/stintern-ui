@@ -1,0 +1,78 @@
+<header class="navigation">
+  <div class="container">
+    <a href="/" id="logo">
+      <svg class="stintbird">
+        <use xlink:href="#shape-logo-stintern" />
+      </svg>          
+      <h1 class="hide"><span>Stintern Connecting student with startup</span></h1>
+    </a>
+    <nav class="site-nav">
+      {% if page.active == "stint" %}
+        <a href="/boss/index.html" class="nav-link active">Stints</a>
+      {% else %}
+        <a href="/boss/index.html" class="nav-link">Stints</a>
+      {% endif %}
+      {% if page.active == "dashboard" %}
+        <a href="/boss/my-dashboard.html" class="nav-link active">Dashboard</a>
+      {% else %}
+        <a href="/boss/my-dashboard.html" class="nav-link">Dashboard</a>
+      {% endif %}
+      {% if page.active == "profile" %}
+        <a href="/boss/my-profile.html" class="nav-link active">Profile</a>
+      {% else %}
+        <a href="/boss/my-profile.html" class="nav-link">Profile</a>
+      {% endif %}
+    </nav>
+    <nav class="action-nav">
+      <div class="user-panel dropdown">
+        <a id="user-panel" class="user-panel--container" data-toggle="dropdown" aria-expanded="true">
+          <img class="user-panel--image" src="/images/company/dropbox-logo.png" alt="">
+          <svg class="user-panel--icon">
+            <use xlink:href="#shape-userpanel-expand" />
+          </svg>
+        </a>
+        <ul class="user-panel--nav" role="menu" aria-labelledby="user-panel">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="/boss/my-account.html">Account</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="open-menu menu-icon">
+      <svg>
+        <use xlink:href="#shape-menu-icon" />
+      </svg>
+    </div>
+  </div>
+</header><!-- navigation -->
+
+<section class="dinner-menu">
+  <div class="open-menu close-icon"></div>
+  <nav class="dinner-menu-nav">
+    <ul>
+      <li><a class="dinner-menu-item a1" href="student-jobs.html">Stints</a></li>
+      <li><a class="dinner-menu-item a2" href="student-stint.html">Dashboard</a></li>
+      <li><a class="dinner-menu-item a3" href="student-profile.html">Profile</a></li>
+    </ul>
+    <ul>
+      <li><a class="dinner-menu-item a4" href="account-setting.html">Account</a></li>
+      <li><a class="dinner-menu-item a5" href="login.html">Logout</a></li>
+    </ul>
+    <div class="dinner-menu-soc a6">
+        <a href="#">
+          <svg class="user-panel--icon">
+            <use xlink:href="#shape-facebook-circle" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="user-panel--icon">
+            <use xlink:href="#shape-twitter-circle" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="user-panel--icon">
+            <use xlink:href="#shape-instagram-circle" />
+          </svg>
+        </a>
+    </div>
+  </nav>
+</section><!-- dinner-menu -->

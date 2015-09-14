@@ -1,0 +1,9 @@
+.jobSearch {
+	text-align: center;
+	padding: 2rem 1rem;
+	background: #fff;
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}

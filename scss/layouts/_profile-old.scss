@@ -1,0 +1,54 @@
+
+
+.profile-sidebar {
+	@extend .card-content;
+}
+
+.profile-main {
+	@extend .card-content;
+}
+
+.profile-category {
+	padding: 0;
+	margin-bottom: 2rem;
+	border-bottom: 2px dotted #e4e4e4;
+
+	&:last-child {
+		border: none;
+	}
+
+	p, li {
+		// margin-bottom: 2rem;
+		line-height: 1.8;
+	}
+
+
+	& ul, ol {
+		padding-left: 1.5rem;
+	}
+}
+.profile-category-title {
+	// @extend h2;
+	font-weight: 200;
+	margin-bottom: .8em;
+	color: $stintern-blue;
+	line-height: 1.8;
+}
+.profile-content-group, .profile-content-group--education {
+	margin-bottom: 2rem;
+}
+.profile-content-group--education p {
+	margin-bottom: 0;
+}
+.status-category-title {
+	@extend .profile-category-title;
+	font-size: 1.3em !important;
+	font-weight: normal !important;
+
+	img {
+		max-width: 1.5em;
+		margin-left: 0.5em;
+	}
+}
+
+

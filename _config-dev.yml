@@ -1,0 +1,28 @@
+name: Stintern
+
+baseurl: ""
+
+paginate: 5
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["smart"]
+
+exclude: [
+  .git,
+  .gitignore,
+  .DS_Store,
+  CNAME,
+  svg-icons,
+  svg-decorations,
+  scss,
+  .sass-cache,
+  bower_components,
+  package.json,
+  Gruntfile.js,
+  node_modules,
+  readme.md,
+  bower.json
+]
+
+excerpt_separator: <!--more-->

@@ -1,0 +1,129 @@
+---
+layout: default
+title:  "Boss's Stint"
+active: dashboard
+login-as: boss
+---
+
+<section class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="page-header--info">
+          <h2 class="page-header--title">Web Developer</h2>
+          <p class="status green">Published</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="page-header--action">
+          <a href="/boss/edit-stint.html"><button class="button">Edit Stint</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- page-header -->
+
+<section class="toolbar-nav">
+  <div class="container">
+    <div class="row ">
+      <div class="col-sm-12">
+        <div class="toolbar-nav--tabs">
+          <a href="/boss/my-dashboard-stint.html" class="active">Overview</a>
+          <a href="/boss/my-dashboard-applicants.html" class="">Applicants<span class="badge-stintern">3</span></a>
+        </div>
+      </div>
+    </div> <!-- toolbar-nav--tabs -->
+  </div>
+</section><!-- toolbar -->
+
+<main class="content-area">
+  <div class="content-container">
+    
+    <section class="card-content-box stint-detail">
+      <article class="content-category">
+        <div class="content-category--group stint-detail--header">
+          <hgroup>
+            <h3>Web Developer</h3>
+            <p><svg class="icon-stint-card"><use xlink:href="#shape-pin"/></svg>Sydney, Australia</p>
+            <p><svg class="icon-stint-card"><use xlink:href="#shape-deadline"/></svg>18 Days left to apply</p>
+          </hgroup>
+          <div class="data">
+            <p class="data-number">23</p>
+            <p class="data-title">Applicants</p>
+          </div>
+        </div>
+        <div class="row stint-detail--display">
+          <div class="col-sm-4">
+            <div class="stint-detail--display-item">
+              <svg class="icon-stint-detail"><use xlink:href="#shape-schedule-stint"/></svg>
+              <h5>Stint Schedule</h5>
+              {% include stint-date.html %}
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="stint-detail--display-item">
+              <svg class="icon-stint-detail"><use xlink:href="#shape-rate-stint"/></svg>
+              <h5>Rate</h5>
+              <div class="stint-detail--data">
+                <p><span>50 $</span>/ hour</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="stint-detail--display-item">
+              <svg class="icon-stint-detail"><use xlink:href="#shape-hours-stint-a"/></svg>
+              <h5>Time Commitment</h5>
+              <div class="stint-detail--data">
+                <p><span>30 Hours</span>/ Week</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="content-category">
+        <h2 class="content-category--title">Description</h2>
+        <div class="content-category--group">
+          <h5>Brief Description</h5>
+          <p>Join our team of passionate Software Engineers and Web Developers to help elevate our successful graphics software products to the next level. The ideal candidate has an interest in cutting edge web technologies, human interface devices, imaging, video/gaming production and/or graphics rich web services</p>
+        </div>
+        <div class="content-category--group">
+          <h5>Responsibility</h5>
+          <ol>
+            <li>Design, prototype, implement, troubleshoot and maintain web based features for collaboration, ecommerce, content creation, media management and delivery.</li>
+            <li>Investigate, evaluate and execute technology improvements that will enable our web platform to succeed and be viable for the future.</li>
+          </ol>
+        </div>
+        <div class="content-category--group">
+          <h5>Expected learning opportunities</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eius quam provident reiciendis qui modi, at excepturi dolorum quaerat hic voluptates dolores veniam, asperiores culpa fuga adipisci quas inventore similique.</p>
+        </div>
+        <div class="content-category--group">
+          <h5>Candidate Criteria</h5>
+          <p>Highly passionate, ultimately curious.</p>
+        </div>
+      </article>
+      <article class="content-category">
+        <h2 class="content-category--title">Applicant Preferences</h2>
+        <div class="content-category--group">
+          <h5>Area of Study</h5>
+          <p>BS in Computer Science, Mathematics, science, or equivalent major.</p>
+        </div>
+        <div class="content-category--group">
+          <h5>Skills Required</h5>
+          <p>
+            <span class="tag">NodeJs</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Ruby on Rails</span>
+            <span class="tag">NoSQL</span>
+            <span class="tag">EsMambo</span>
+          </p>
+        </div>
+        <div class="content-category--group">
+          <h5>Experience Required</h5>
+          <p>3+ years experience in front end and/or back end web development using JavaScript, Perl, C# or Python.</p>
+        </div>
+      </article>      
+    </section>
+
+  </div>           
+</main><!-- content-area -->

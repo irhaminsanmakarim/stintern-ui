@@ -1,0 +1,133 @@
+.menu-open {
+	overflow: hidden;
+}
+
+.dinner-menu {
+	// visibility: hidden;
+	opacity: 1;
+	position: fixed;
+	display: block;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2002;
+	background-color: $bg-dark;
+	transform: translateX(-100%);
+	transition: transform 0.4s;
+
+	.menu-open & {
+		// visibility: visible;
+		opacity: 1;
+		z-index: 2002;
+		transform: translateX(0);
+		transition: transform 0.4s;
+	}
+}
+
+.close-icon {
+	height: 4rem;
+	width: 4rem;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+  	padding: 1em;
+
+	&:before {
+		content: ' ';
+		display: block;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		background-color: transparent;
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-image: url(../images/x-mark-icon-white.svg);
+	}
+}
+
+.dinner-menu-nav {
+	text-align: center;
+	padding: 4rem 2rem 0;
+
+	ul {
+		margin: 0 0 1.5rem;
+		padding: 0 0 .5rem 0;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+	}
+
+	li {
+		list-style: none;
+		margin-bottom: 1rem;
+	}
+}
+
+.dinner-menu-soc {
+	transform: translateX(-10rem);
+	transition: all .6s;
+	opacity: 0;
+
+	.menu-open & {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	
+	img {
+		width: 2.5rem;
+	}
+}
+
+.dinner-menu-item {
+	display: inline-block;
+	color: rgba(255,255,255,1);
+	font-size: 1rem;
+	font-weight: 700;
+	opacity: 0;
+	transform: translateX(-10rem);
+	transition: all .6s;
+
+	&:hover {
+		text-decoration: none;
+		color: rgba(255,255,255,.6);
+	}
+
+	.menu-open & {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	.button-nav { font-size: 1rem; }
+}
+
+.a1 {
+	transition-delay: 0.08s;
+}
+.a2 {
+	transition-delay: 0.16s;
+}
+.a3 {
+	transition-delay: 0.24s;
+}
+.a4 {
+	transition-delay: 0.32s;
+}
+.a5 {
+	transition-delay: 0.40s;
+}
+.a6 {
+	transition-delay: 0.48s;
+}
+.a7 {
+	transition-delay: 0.56s;
+}
+.a8 {
+	transition-delay: 0.64s;
+}
+.a9 {
+	transition-delay: 0.72s;
+}
+.a10 {
+	transition-delay: 0.80s;
+}

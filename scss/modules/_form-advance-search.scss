@@ -1,0 +1,20 @@
+.form-advance-search {
+	display: none;
+
+	// max-width: 350px;
+	// box-shadow: $materialz1;
+	@extend .clearfix;
+
+	@media (min-width: $screen-md-min) {
+		display: block;
+		margin: 0 auto 2.5rem;
+	}
+
+	@media (min-width: $screen-lg-min) {
+		display: block;
+		margin: 0 auto 2.5rem;
+		padding-right: 2rem;
+		border-right: $border;
+	}
+
+}

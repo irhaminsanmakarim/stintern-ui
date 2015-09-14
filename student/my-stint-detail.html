@@ -1,0 +1,146 @@
+---
+layout: default
+title:  "Student Stint Detail"
+active: dashboard
+login-as: student
+---
+
+<section class="profile">
+  <header class="profile--header" style="background: url(/images/gradient-profile.png) left bottom repeat-x, url(/images/gradient-profile.png) left bottom repeat-x, url(/images/company/airbnb-office-1.jpg) center top no-repeat #fff">
+    <div class="container">
+      <div class="profile--header-table">              
+        <div class="profile--header-container">
+          <div class="profile--logo-wrapper">
+            <img src="/images/company/dropbox-logo.png" alt="">
+            <h1 class="hide">Airbnb</h1>
+          </div>
+          <div class="profile--header-content">
+            <h2 class="profile--name">Dropbox Inc.</h2>
+            <p><svg class="icon-stint-card is-white"><use xlink:href="#shape-pin"/></svg>Located at New York, USA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="toolbar-profile">
+    <div class="container">
+      <div class="toolbar-profile--tabs">
+        <a href="/student/company-profile.html" class="">Profile</a>
+        <a href="/student/company-stint-list.html" class="">Stints<span class="badge-stintern">3</span></a>
+      </div> 
+    </div>
+  </nav><!-- toolbar-nav -->
+  <main class="profile--body">
+    <div class="container">
+      <div class="profile--body-wrapper">
+        <article class="profile--body-content">
+          <div class="rating">
+            <div class="star">
+              <svg class="icon-star is-filled"><use xlink:href="#shape-star"/></svg>
+              <svg class="icon-star is-filled"><use xlink:href="#shape-star"/></svg>
+              <svg class="icon-star is-filled"><use xlink:href="#shape-star"/></svg>
+              <svg class="icon-star"><use xlink:href="#shape-star"/></svg>
+              <svg class="icon-star"><use xlink:href="#shape-star"/></svg>
+              <span class="total-star inline-block">3.4</span>
+            </div>
+            <a href="/student/company-profile.html">( 32 Reviews )</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+</section><!-- profile -->
+
+<main class="content-area">
+  <div class="content-container">
+    
+    status
+
+    <section class="card-content-box stint-detail">
+      <article class="content-category">
+        <div class="content-category--group stint-detail--header">
+          <hgroup>
+            <h3>Web Developer</h3>
+            <p><svg class="icon-stint-card"><use xlink:href="#shape-pin"/></svg>Sydney, Australia</p>
+            <p><svg class="icon-stint-card"><use xlink:href="#shape-deadline"/></svg>you have applied</p>
+          </hgroup>
+          <div class="data">
+            <p class="data-number">23</p>
+            <p class="data-title">Applicants</p>
+          </div>
+        </div>
+        <div class="row stint-detail--display">
+          <div class="col-sm-4">
+            <div class="stint-detail--display-item">
+              <svg class="icon-stint-detail"><use xlink:href="#shape-schedule-stint"/></svg>
+              <h5>Stint Schedule</h5>
+              {% include stint-date.html %}
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="stint-detail--display-item">
+              <svg class="icon-stint-detail"><use xlink:href="#shape-rate-stint"/></svg>
+              <h5>Rate</h5>
+              <div class="stint-detail--data">
+                <p><span>50 $</span>/ hour</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="stint-detail--display-item">
+              <svg class="icon-stint-detail"><use xlink:href="#shape-hours-stint-a"/></svg>
+              <h5>Time Commitment</h5>
+              <div class="stint-detail--data">
+                <p><span>30 Hours</span>/ Week</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="content-category">
+        <h2 class="content-category--title">Description</h2>
+        <div class="content-category--group">
+          <h5>Brief Description</h5>
+          <p>Join our team of passionate Software Engineers and Web Developers to help elevate our successful graphics software products to the next level. The ideal candidate has an interest in cutting edge web technologies, human interface devices, imaging, video/gaming production and/or graphics rich web services</p>
+        </div>
+        <div class="content-category--group">
+          <h5>Responsibility</h5>
+          <ol>
+            <li>Design, prototype, implement, troubleshoot and maintain web based features for collaboration, ecommerce, content creation, media management and delivery.</li>
+            <li>Investigate, evaluate and execute technology improvements that will enable our web platform to succeed and be viable for the future.</li>
+          </ol>
+        </div>
+        <div class="content-category--group">
+          <h5>Expected learning opportunities</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eius quam provident reiciendis qui modi, at excepturi dolorum quaerat hic voluptates dolores veniam, asperiores culpa fuga adipisci quas inventore similique.</p>
+        </div>
+        <div class="content-category--group">
+          <h5>Candidate Criteria</h5>
+          <p>Highly passionate, ultimately curious.</p>
+        </div>
+      </article>
+      <article class="content-category">
+        <h2 class="content-category--title">Applicant Preferences</h2>
+        <div class="content-category--group">
+          <h5>Area of Study</h5>
+          <p>BS in Computer Science, Mathematics, science, or equivalent major.</p>
+        </div>
+        <div class="content-category--group">
+          <h5>Skills Required</h5>
+          <p>
+            <span class="tag">NodeJs</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Ruby on Rails</span>
+            <span class="tag">NoSQL</span>
+            <span class="tag">EsMambo</span>
+          </p>
+        </div>
+        <div class="content-category--group">
+          <h5>Experience Required</h5>
+          <p>3+ years experience in front end and/or back end web development using JavaScript, Perl, C# or Python.</p>
+        </div>
+      </article>      
+    </section>
+
+  </div>           
+</main><!-- content-area -->

@@ -1,0 +1,33 @@
+<article class="stint-card">
+  <hgroup class="stint-card-status">
+    <span class="stint-card-status-label green">Succesful</span>
+  </hgroup>
+  <hgroup class="stint-card--logo">
+    <a class="stint-card--logo-image" href="#" style="background-color: #fff;">
+      <img src="/images/company/{{ post.company-logo }}" alt="">
+    </a>
+  </hgroup>
+  <main class="stint-card--body">
+    <div class="stint-card--body-bucket">
+      <div class="stint-card--content">
+        <p><i>{{ post.company-name }}</i></p>
+        <a href="student-stint-card--detail.html" class="stint-card--title">{{ post.stint-role }}</a>
+        <p><svg class="icon-stint-card"><use xlink:href="#shape-pin"/></svg>{{ post.stint-city }}, {{ post.stint-country }}</p>
+        {% include stint-date.html %}
+      </div>
+      <footer class="stint-card--footer">
+        <div class="stint-card--footer-data">
+          <p class="stint-card--card-data-icon"><svg class="icon-stint-card-footer"><use xlink:href="#shape-applicants"/></svg>{{ post.stint-applicants }}</p>
+        </div>
+        <div class="stint-card--footer-bookmark">
+          <svg class="icon-bookmark">
+            <use xlink:href="#shape-bookmark" />
+          </svg>
+        </div>
+        <div class="stint-card--footer-action">
+          <a href="/student/my-stint-detail.html" class="button-soft">Detail<svg class="icon-button-right-small"><use xlink:href="#shape-chevron-right"/></svg></a>
+        </div>
+      </footer>
+    </div>
+  </main>
+</article><!-- stint-card -->

@@ -1,0 +1,45 @@
+.radio-form {
+	label {
+		cursor: pointer;
+		margin-bottom: 1rem;
+	}
+
+	input {
+		display: none;
+	}
+
+	.radio-form-image {
+		display: inline-block;
+		height: 24px;
+		width: 24px;
+		margin-right: 10px;
+		vertical-align: middle;
+		color: transparent;
+
+		svg {
+			height: 100%;
+			width: 100%;
+			fill: #dedede;
+		}
+	}
+
+	input:checked + .radio-form-image {
+		color: $stintern-blue;
+		transition: all 200ms;
+	}
+
+	p {
+		display: inline-block;
+		margin: 0;
+		color: #777;
+	}
+}
+
+
+#svgstoreafb314f3146d9fcca983fa22d3604f27border {
+	// fill: currentColor;
+}
+
+#svgstoreafb314f3146d9fcca983fa22d3604f27isi {
+	fill: currentColor;
+}

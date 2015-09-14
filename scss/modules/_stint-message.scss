@@ -1,0 +1,40 @@
+.stint-message {
+	@extend .card-content-box;
+	box-shadow: none;
+}
+
+.stint-message__icon {
+	display: table-cell;
+	vertical-align: top;
+	width: 70px;
+	height: 70px;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.stint-message__body {
+	display: table-cell;
+	vertical-align: top;
+	padding-left: 1rem;
+}
+
+
+.stint-message.is-rejected {
+	background-color: #F1D7D7;
+	color: #A95252;
+
+	.stint-message__icon {
+		background-image: url(../images/sad.svg);
+	}
+}
+
+.stint-message.is-accepted {
+	background-color: lighten($green,40%);
+	color: darken($green,10%);
+
+	.stint-message__icon {
+		background-image: url(../images/happy.svg);
+	}
+}
+

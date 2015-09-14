@@ -1,0 +1,225 @@
+.stint-card-grid-container {
+	text-align: center;
+	margin: 0 -15px;
+
+	@media (min-width: $screen-sm-min) {
+		margin: 0;
+	}
+
+	@media (min-width: $screen-lg-min) {
+		text-align: left;
+		margin: 0;
+	}
+}
+
+.stint-card {
+	display: inline-block;
+	width: 275px;
+	margin: 2rem .5rem;
+
+	background: #fff;
+	border-radius: $border-radius;
+	// box-shadow: $materialz1;
+	border: $border;
+
+	@media (min-width: $screen-sm-min) {
+		margin: 2rem;
+	}
+
+	p {
+		// overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
+
+/* ==========================================================================
+   STINT CARD LOGO
+   ========================================================================== */
+
+.stint-card-logo {
+	// height: 150px;
+	overflow: hidden;
+	display: block;
+
+	&-image {
+		display: table-cell;
+		border-radius: $border-radius $border-radius 0 0;
+		// height: 150px;
+		width: 275px;
+		vertical-align: middle;
+ 		padding: 1.5rem 0 0;
+		text-align: center;
+
+		// background-color: #ddd;
+
+		&:hover {
+			opacity: .8;
+		}
+
+		img {
+			max-width: 100%;
+			max-height: 100%;
+			width: 110px;
+			height: 110px;
+			border-radius: 100rem;
+			border: 1px solid #e4e4e4;
+			background-color: #fff;
+		}
+	}
+}
+
+/* ==========================================================================
+   STINT CARD STATUS
+   ========================================================================== */
+
+.stint-card-status {
+	display: block;
+	position: relative;
+	height: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.stint-card-status-label {
+	position: absolute;
+	top: -10px;
+	right: 10px;
+	color: #fff;
+	padding: 10px 14px;
+	border-radius: 0 .3em .3em .3em;
+	line-height: 1;
+	font-size: .8em;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -10px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 10px 10px;
+	}
+
+	&.green {
+		background: $green;
+		&:before {
+			border-color: transparent transparent darken($green,10%) transparent;
+		}
+	}
+
+	&.yellow {
+		background: $yellow;
+		&:before {
+			border-color: transparent transparent darken($yellow,10%) transparent;
+		}
+	}
+
+	&.red {
+		background: $red;
+		&:before {
+			border-color: transparent transparent darken($red,10%) transparent;
+		}
+	}
+}
+
+
+/* ==========================================================================
+   STINT CARD CONTENT
+   ========================================================================== */
+
+.stint-card-content {
+	padding: 26px 22px 22px 22px;
+	text-align: left;
+}
+
+
+.stint-card-title {
+	margin-top: .2em;
+	margin-bottom: 1em;	
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-weight: normal;	
+}
+
+
+/* ==========================================================================
+   STINT CARD FOOTER
+   ========================================================================== */
+
+.stint-card-footer {
+	display: table;
+	width: 100%;
+	background: #fafafa;
+	border-top: 1px solid #eee;
+	height: 45px;
+	border-radius: 0 0 $border-radius $border-radius; 
+}
+
+.stint-card-footer-third {
+	display: table-cell;
+	width: 33.33%;
+	height: 45px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.stint-card-footer-link {
+	&:hover {
+		text-decoration: none;
+		background: #eee;
+	}
+
+	span {
+		margin: 0;
+		font-weight: bold;
+		// color: $stintern-pink;
+		color: #777;
+	}
+
+	& .stint-card-data-icon {
+		// color: $stintern-pink;
+		color: #777;
+	}
+}
+
+.stint-card-data-icon {
+	line-height: 20px;
+	display: inline-block;
+	padding-left: 25px;
+	transition: all 0.5s ease;
+	margin: 0;
+	font-weight: bold;
+	color: #888;
+	
+}
+
+.i-view-blue {
+	background: url('../images/view-blue.svg') no-repeat center left;
+	background-size: 20px 20px;
+}
+
+.i-view-grey {
+	background: url('../images/view-grey.svg') no-repeat center left;
+	background-size: 20px 20px;
+}
+
+.i-applicants-blue {
+	background: url('../images/applicants-blue.svg') no-repeat center left;
+	background-size: 20px 20px;
+}
+
+.i-applicants-pink {
+	background: url('../images/applicants-pink.svg') no-repeat center left;
+	background-size: 20px 20px;
+}
+
+.i-applicants-grey {
+	background: url('../images/applicants-grey.svg') no-repeat center left;
+	background-size: 20px 20px;
+}

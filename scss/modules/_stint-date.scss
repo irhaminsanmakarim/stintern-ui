@@ -1,0 +1,107 @@
+.stint-date {
+	@extend .clearfix;
+	// margin: 0;
+	// background: $border-color;
+	max-width: 20rem;
+	margin: 0 auto;
+	font-size: .8rem !important;
+	color: #fff;
+	height: 50px;
+
+	// @media (min-width: $screen-sm-min) {
+	// 	& {
+	// 		margin: 0;
+	// 	}
+	// }
+
+	p {
+		line-height: normal !important;
+		color: #fff !important;
+	}
+
+	.stint & {
+		max-width: 100%;
+
+		@media (min-width: $screen-lg-min) {
+			max-width: 14rem;
+		}
+	}
+
+	.stint-card & {
+		max-width: 100%;
+	}
+
+}
+
+.stint-date--start, .stint-date--end {
+	float: left;
+	width: 50%;
+	text-align: center;
+	padding: .268em;
+	// color: #fff;
+}
+
+.stint-date--start {
+	// background: rgba(255,255,255,.5);
+	// background: #eee;
+	background: lighten($stintern-blue,5%);
+	// border-top: $border;
+	// border-bottom: $border;
+	position: relative;
+	border-radius: .3em 0 0 .3em;
+
+}
+
+.stint-date--end {
+	// background: rgba(255,255,255,.5);
+	// background: #ddd;
+	background: $stintern-blue;
+	// border-top: $border;
+	// border-bottom: $border;
+	// border-left: $border;
+	border-radius: 0 .3em .3em 0;
+}
+
+.stint-date--box {
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+	vertical-align: middle;
+	// width: 90%;
+	// background: #eee;
+}
+
+.stint-date--title {
+	// font-weight: bold;
+	margin: 0;
+	opacity: .8;
+	font-size: .8em !important;
+	letter-spacing: .8px;
+	// color: rgba(255,255,255,.5);
+}
+
+.stint-date--day {
+	display: table-cell;
+	vertical-align: middle;
+	width: 50%;
+
+	p {
+		font-weight: lighter;
+		font-size: 2em !important;
+		margin: 0;
+		line-height: normal !important;
+	}
+}
+
+.stint-date--month {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: .5em;
+	width: 100%;
+	h6 {
+		text-transform: uppercase;
+		font-weight: bold;
+		margin: 0;
+		font-size: .8em;
+	}
+}

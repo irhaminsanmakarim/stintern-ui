@@ -1,0 +1,49 @@
+.page-header {
+	width: 100%;
+	padding: 1.5rem 0;
+	margin: 0;
+	background: #fff;
+	min-height: 4rem;
+	border: none;
+	background-color: $stintern-blue;
+	color: #fff;
+	text-align: center;
+
+	@media (min-width: $screen-sm-min) {  
+		padding: 1.4rem 0;
+		text-align: left;
+	}
+}
+.page-header--info {
+	margin-bottom: 1rem;
+	@media (min-width: $screen-sm-min) {  
+		& {
+			margin-bottom: 0;
+		}
+	}
+}
+.page-header--title {
+    display: block;
+    vertical-align: baseline;
+	font-weight: lighter;
+	color: #fff;
+
+	@media (min-width: $screen-sm-min) {
+		display: inline;
+	}
+}
+
+
+.page-header--action {
+	float: none;
+	@media (min-width: $screen-sm-min) {  
+		& {
+			float: right;
+		}
+	}
+}
+
+
+.dropdown-stintern {
+	top: 80% !important;
+}
