@@ -46,30 +46,34 @@
 </header><!-- navigation -->
 
 <section class="dinner-menu">
-  <div class="open-menu close-icon"></div>
+  <div class="open-menu close-icon">
+    <svg>
+      <use xlink:href="#shape-close" />
+    </svg>    
+  </div>
   <nav class="dinner-menu-nav">
     <ul>
-      <li><a class="dinner-menu-item a1" href="/boss/index.html">Stints</a></li>
-      <li><a class="dinner-menu-item a2" href="/boss/my-dashboard.html">Dashboard</a></li>
-      <li><a class="dinner-menu-item a3" href="/boss/my-profile.html">Profile</a></li>
+      <li><a class="dinner-menu-item a1" href="{{ site.baseurl }}/boss/index.html">Stints</a></li>
+      <li><a class="dinner-menu-item a2" href="{{ site.baseurl }}/boss/my-dashboard.html">Dashboard</a></li>
+      <li><a class="dinner-menu-item a3" href="{{ site.baseurl }}/boss/my-profile.html">Profile</a></li>
     </ul>
     <ul>
-      <li><a class="dinner-menu-item a4" href="/boss/my-account.html">Account</a></li>
-      <li><a class="dinner-menu-item a5" href="/">Logout</a></li>
+      <li><a class="dinner-menu-item a4" href="{{ site.baseurl }}/boss/my-account.html">Account</a></li>
+      <li><a class="dinner-menu-item a5" href="{{ site.baseurl }}/">Logout</a></li>
     </ul>
     <div class="dinner-menu-soc a6">
-        <a href="#">
-          <svg class="user-panel--icon">
+        <a href="#" class="dinner-menu-soc--icon">
+          <svg>
             <use xlink:href="#shape-facebook-circle" />
           </svg>
         </a>
-        <a href="#">
-          <svg class="user-panel--icon">
+        <a href="#" class="dinner-menu-soc--icon">
+          <svg>
             <use xlink:href="#shape-twitter-circle" />
           </svg>
         </a>
-        <a href="#">
-          <svg class="user-panel--icon">
+        <a href="#" class="dinner-menu-soc--icon">
+          <svg>
             <use xlink:href="#shape-instagram-circle" />
           </svg>
         </a>
