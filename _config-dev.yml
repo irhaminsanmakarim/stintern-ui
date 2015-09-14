@@ -2,8 +2,6 @@ name: Stintern
 
 baseurl: ""
 
-paginate: 5
-
 markdown: redcarpet
 redcarpet:
   extensions: ["smart"]
