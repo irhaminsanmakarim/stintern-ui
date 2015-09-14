@@ -1,19 +1,19 @@
 <section class="toolbar-home">
   <nav class="toolbar-home-tabs">
 	{% if page.stint-page == "suggestion" %}
-    	<a href="/student/index.html" class="active">Suggestion</a>
+    	<a href="{{ site.baseurl }}/student/index.html" class="active">Suggestion</a>
 	{% else %}
-		<a href="/student/index.html" class="">Suggestion</a>
+		<a href="{{ site.baseurl }}/student/index.html" class="">Suggestion</a>
 	{% endif %}
 	{% if page.stint-page == "bookmarked" %}
-    	<a href="/student/bookmarked.html" class="active">Bookmarked</a>
+    	<a href="{{ site.baseurl }}/student/bookmarked.html" class="active">Bookmarked</a>
 	{% else %}
-		<a href="/student/bookmarked.html" class="">Bookmarked</a>
+		<a href="{{ site.baseurl }}/student/bookmarked.html" class="">Bookmarked</a>
 	{% endif %}
 	{% if page.stint-page == "search" %}
-    	<a href="/student/search.html" class="active"><svg class="icon-stint-search"><use xlink:href="#shape-stint-search"/></svg>Search</a>
+    	<a href="{{ site.baseurl }}/student/search.html" class="active"><svg class="icon-stint-search"><use xlink:href="#shape-stint-search"/></svg>Search</a>
 	{% else %}
-		<a href="/student/search.html" class=""><svg class="icon-stint-search"><use xlink:href="#shape-stint-search"/></svg>Search</a>
+		<a href="{{ site.baseurl }}/student/search.html" class=""><svg class="icon-stint-search"><use xlink:href="#shape-stint-search"/></svg>Search</a>
 	{% endif %}
   </nav>
 </section><!-- toolbar-home -->

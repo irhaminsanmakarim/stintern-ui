@@ -8,31 +8,31 @@
     </a>
     <nav class="site-nav">
       {% if page.active == "stint" %}
-        <a href="/student/index.html" class="nav-link active">Stints</a>
+        <a href="{{ site.baseurl }}/student/index.html" class="nav-link active">Stints</a>
       {% else %}
-        <a href="/student/index.html" class="nav-link">Stints</a>
+        <a href="{{ site.baseurl }}/student/index.html" class="nav-link">Stints</a>
       {% endif %}
       {% if page.active == "dashboard" %}
-        <a href="/student/my-dashboard.html" class="nav-link active">Dashboard</a>
+        <a href="{{ site.baseurl }}/student/my-dashboard.html" class="nav-link active">Dashboard</a>
       {% else %}
-        <a href="/student/my-dashboard.html" class="nav-link">Dashboard</a>
+        <a href="{{ site.baseurl }}/student/my-dashboard.html" class="nav-link">Dashboard</a>
       {% endif %}
       {% if page.active == "profile" %}
-        <a href="/student/my-profile.html" class="nav-link active">Profile</a>
+        <a href="{{ site.baseurl }}/student/my-profile.html" class="nav-link active">Profile</a>
       {% else %}
-        <a href="/student/my-profile.html" class="nav-link">Profile</a>
+        <a href="{{ site.baseurl }}/student/my-profile.html" class="nav-link">Profile</a>
       {% endif %}
     </nav>
     <nav class="action-nav">
       <div class="user-panel dropdown">
         <a id="user-panel" class="user-panel--container" data-toggle="dropdown" aria-expanded="true">
-          <img class="user-panel--image" src="/images/user/cecilia.jpg" alt="">
+          <img class="user-panel--image" src="{{ site.baseurl }}/images/user/cecilia.jpg" alt="">
           <svg class="user-panel--icon">
             <use xlink:href="#shape-userpanel-expand" />
           </svg>
         </a>
         <ul class="user-panel--nav" role="menu" aria-labelledby="user-panel">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="/student/my-account.html">Account</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ site.baseurl }}/student/my-account.html">Account</a></li>
           <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Logout</a></li>
         </ul>
       </div>
@@ -49,13 +49,13 @@
   <div class="open-menu close-icon"></div>
   <nav class="dinner-menu-nav">
     <ul>
-      <li><a class="dinner-menu-item a1" href="student-jobs.html">Stints</a></li>
-      <li><a class="dinner-menu-item a2" href="student-stint.html">Dashboard</a></li>
-      <li><a class="dinner-menu-item a3" href="student-profile.html">Profile</a></li>
+      <li><a class="dinner-menu-item a1" href="/student/index.html">Stints</a></li>
+      <li><a class="dinner-menu-item a2" href="/student/my-dashboard.html">Dashboard</a></li>
+      <li><a class="dinner-menu-item a3" href="/student/my-profile.html">Profile</a></li>
     </ul>
     <ul>
-      <li><a class="dinner-menu-item a4" href="account-setting.html">Account</a></li>
-      <li><a class="dinner-menu-item a5" href="login.html">Logout</a></li>
+      <li><a class="dinner-menu-item a4" href="/student/my-account.html">Account</a></li>
+      <li><a class="dinner-menu-item a5" href="/">Logout</a></li>
     </ul>
     <div class="dinner-menu-soc a6">
         <a href="#">

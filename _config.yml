@@ -1,6 +1,6 @@
 name: Stintern
 
-baseurl: "/stintern-ui/"
+baseurl: "/stintern-ui"
 
 markdown: redcarpet
 redcarpet:

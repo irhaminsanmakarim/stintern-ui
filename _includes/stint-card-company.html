@@ -21,9 +21,9 @@
         </div>
         <div class="stint-card--footer-action">
           {% if page.login-as == "student" %}
-          <a href="/student/company-stint-detail.html" class="button-soft">Detail <svg class="icon-button-right-small"><use xlink:href="#shape-chevron-right"/></svg></a>
+          <a href="{{ site.baseurl }}/student/company-stint-detail.html" class="button-soft">Detail <svg class="icon-button-right-small"><use xlink:href="#shape-chevron-right"/></svg></a>
           {% else %}
-          <a href="/boss/other-company-stint-detail.html" class="button-soft">Detail <svg class="icon-button-right-small"><use xlink:href="#shape-chevron-right"/></svg></a>
+          <a href="{{ site.baseurl }}/boss/other-company-stint-detail.html" class="button-soft">Detail <svg class="icon-button-right-small"><use xlink:href="#shape-chevron-right"/></svg></a>
           {% endif %}
         </div>
       </footer>
